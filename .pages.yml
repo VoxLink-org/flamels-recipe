@@ -1,45 +1,64 @@
-
 media:
   input: src/media
   output: /media
 content:
-  - name: posts
-    label: Posts
+  - name: docs
+    label: Documentation
     type: collection
-    path: 'src/posts'
+    path: src/docs
+    filename: "{primary}.md"
     view:
-      fields: [ title, published, date ]
+      fields: [ title, order, published, date ]
+      primary: title
+      sort: [ order, title ]
+      default:
+        sort: order
+        order: asc
     fields:
-      - name: published
-        label: Published
-        type: boolean
-        default: true
-      - name: date
-        label: Date
-        type: date
-      - name: title
-        label: Title
-        type: string
-      - name: body
-        label: Body
-        type: rich-text
-  - name: site
-    label: Site settings
-    path: src/_data/site.json
+      - { name: title, label: Title, type: string, required: true }
+      - { name: published, label: Published, type: boolean, required: true, default: true }
+      - { name: date, label: Date, type: date, required: true }
+      - { name: description, label: Description, type: string, options: { maxlength: 180 }}
+      - { name: order, label: Order, type: number }
+      - { name: body, label: Body, type: rich-text }
+  - label: Home page
+    path: src/index.njk
+    name: homepage
     type: file
     fields:
-      - name: title
-        label: Website title
-        type: string
-      - name: description
-        label: Website description
-        type: string
-        description: Will be provused for any page with no description.
-      - name: url
-        label: Website URL
-        type: string
-        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
-      - name: cover
-        label: Preview image
-        type: image
-        description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
+      - { name: layout, type: string, hidden: true, default: layouts/base.njk }
+      - name: promotion
+        label: Promotion
+        type: object
+        fields:
+          - { name: text, label: Text, type: string }
+          - { name: url, label: URL, type: string }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: description, label: Description, type: string }
+      - name: features
+        label: Features
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - name: entries
+            label: Entries
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: description, label: Description, type: string }
+              - { name: icon, label: Icon, type: string }
+              - { name: soon, label: Soon, type: boolean }
+      - name: faq
+        label: FAQ
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - name: entries
+            label: Entries
+            type: object
+            list: true
+            fields:
+              - { name: question, label: Question, type: string }
+              - { name: answer, label: Answer, type: text, options: { rows: 5 } }
+      - { name: body, label: Body, type: code, options: { format: html} }
