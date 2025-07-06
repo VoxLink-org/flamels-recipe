@@ -5,6 +5,8 @@ const lucideIcons = require("@grimlink/eleventy-plugin-lucide-icons");
 
 const md = new markdownIt({ html: true });
 
+const websitePath = 'flamels-recipe';
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
      "src/media": "/media",
