@@ -11,24 +11,24 @@
   <title>{{ site.title + ": " + title if page.url === "/" else title + " - " + site.title }}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="description" content="{{ description or site.description }}"/>
-  <link rel="stylesheet" type="text/css" href="{{ site.url }}/styles.css?build={% now %}"/>
-  <link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/favicon-16x16.png">
-  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">
-  <link rel="icon" type="image/svg+xml" href="{{ site.url }}/favicon.svg">
+  <link rel="stylesheet" type="text/css" href="{{ site.path }}/styles.css?build={% now %}"/>
+  <link rel="icon" type="image/x-icon" href="{{ site.path }}/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.path }}/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.path }}/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ site.path }}/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="{{ site.path }}/favicon.svg">
   <meta property="og:type" content="{{ type or 'website' }}"/>
   <meta property="og:title" content="{{ site.title + ": " + title if page.url === "/" else title + " - " + site.title }}"/>
   <meta property="og:description" content="{{ description or site.description }}"/>
-  <meta property="og:url" content="{{ site.url + page.url }}"/>
-  <meta property="og:image" content="{{ site.url }}/cover@2x.png"/>
+  <meta property="og:url" content="{{ site.path + page.url }}"/>
+  <meta property="og:image" content="{{ site.path }}/cover@2x.png"/>
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:site" content="@pagescms"/>
-  <meta name="twitter:url" content="{{ site.url + page.url }}"/>
+  <meta name="twitter:url" content="{{ site.path + page.url }}"/>
   <meta name="twitter:title" content="{{ site.title + ": " + title if page.url === "/" else title + " - " + site.title }}"/>
   <meta name="twitter:description" content="{{ description or site.description }}"/>
-  <meta name="twitter:image" content="{{ site.url }}/cover@2x.png"/>
-  <script src="{{ site.url }}/js/alpine.js" defer></script>
+  <meta name="twitter:image" content="{{ site.path }}/cover@2x.png"/>
+  <script src="{{ site.path }}/js/alpine.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-background antialiased font-inter">

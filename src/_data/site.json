@@ -1,6 +1,7 @@
 {
   "title": "Flamel's recipe",
   "description": "The LLM-powered financial deep research agent, named after the greatest alchemist.",
-  "url": "https://voxlink-org.github.io/flamels-recipe",
+  "domain": "https://voxlink-org.github.io",
+  "path": "/flamels-recipe",
   "cover": "/assets/cover.png"
 } 
