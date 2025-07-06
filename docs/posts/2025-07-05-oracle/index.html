@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  x-data="{
+    darkMode: localStorage.getItem('dark') ? localStorage.getItem('dark') === 'true' : window.matchMedia('(prefers-color-scheme: dark)').matches
+  }"
+  x-init="$watch('darkMode', val => localStorage.setItem('dark', val))"
+  x-bind:class="{ 'dark': darkMode }">
+<head>
+  <meta charset="UTF-8"/>
+  <title>甲骨文公司（Oracle）深度研究报告 - Flamel&#39;s recipe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="甲骨文正处在一个历史性的转型拐点。其云基础设施业务（OCI），尤其在人工智能（AI）计算领域，正展现出爆发式增长潜力。近期与OpenAI签订的价值数十亿美元的“星际之门”（Stargate）数据中心协议，不仅是对其技术实力的权威背书，更标志着公司已成功切入AI时代最核心的价值链。"/>
+  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1751814173455"/>
+  <link rel="icon" type="image/x-icon" href="/flamels-recipe/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/flamels-recipe/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/flamels-recipe/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/flamels-recipe/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/flamels-recipe/favicon.svg">
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="甲骨文公司（Oracle）深度研究报告 - Flamel&#39;s recipe"/>
+  <meta property="og:description" content="甲骨文正处在一个历史性的转型拐点。其云基础设施业务（OCI），尤其在人工智能（AI）计算领域，正展现出爆发式增长潜力。近期与OpenAI签订的价值数十亿美元的“星际之门”（Stargate）数据中心协议，不仅是对其技术实力的权威背书，更标志着公司已成功切入AI时代最核心的价值链。"/>
+  <meta property="og:url" content="/flamels-recipe/docs/posts/2025-07-05-oracle/"/>
+  <meta property="og:image" content="/flamels-recipe/cover@2x.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@pagescms"/>
+  <meta name="twitter:url" content="/flamels-recipe/docs/posts/2025-07-05-oracle/"/>
+  <meta name="twitter:title" content="甲骨文公司（Oracle）深度研究报告 - Flamel&#39;s recipe"/>
+  <meta name="twitter:description" content="甲骨文正处在一个历史性的转型拐点。其云基础设施业务（OCI），尤其在人工智能（AI）计算领域，正展现出爆发式增长潜力。近期与OpenAI签订的价值数十亿美元的“星际之门”（Stargate）数据中心协议，不仅是对其技术实力的权威背书，更标志着公司已成功切入AI时代最核心的价值链。"/>
+  <meta name="twitter:image" content="/flamels-recipe/cover@2x.png"/>
+  <script src="/flamels-recipe/js/alpine.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6CD3GQF0RC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6CD3GQF0RC');
+</script>
+
+</head>
+<body class="bg-background antialiased font-inter">
+  <header class="border-b flex items-center gap-x-4 py-2 px-4 lg:py-3 lg:px-6 mx-auto sticky top-0 w-full bg-background z-50">
+  <a class="inline-flex items-center" href="/flamels-recipe">
+    <svg class="max-sm:h-4 max-sm:w-4 h-5 w-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 4.8C0 2.14903 2.14903 0 4.8 0H12.0118C13.2848 0 14.5057 0.505713 15.4059 1.40589L22.5941 8.59411C23.4943 9.49429 24 10.7152 24 11.9882V19.2C24 21.851 21.851 24 19.2 24H4.8C2.14903 24 0 21.851 0 19.2V4.8Z"/>
+    </svg>
+    <span class="hidden sm:inline-block ml-2 text-sm font-semibold">Flamel's recipe</span>
+  </a>
+  <a class="ml-auto text-sm font-medium text-muted-foreground hover:text-primary " href="/flamels-recipe/docs/about/">
+    About
+  </a>
+  <a class="text-sm font-medium text-muted-foreground hover:text-primary !text-primary" href="/flamels-recipe/docs">
+    Blogs
+  </a>
+  <a class="flex gap-x-1 items-center text-sm font-medium text-muted-foreground hover:text-primary" href="https://t.me/finance_tools_mcp" target="_blank">
+    Telegram
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3 w-3"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
+  </a>
+</header>
+
+  <div class="flex max-md:flex-col max-w-7xl mx-auto px-4 my-8 lg:px-8 lg:my-12 gap-x-8">
+  <div class="md:w-80 max-md:mb-4">
+    <div class="navigation md:pr-8 md:border-r" x-data="{ showNav: false }">
+      <button @click="showNav = !showNav" class="button-outline flex items-center gap-x-2 w-full md:hidden mb-2">
+        <span x-text="showNav ? 'Hide navigation' : 'Show navigation'"></span>
+        <template x-if="!showNav"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="m7 15 5 5 5-5" /><path d="m7 9 5-5 5 5" /></svg></template>
+        <template x-if="showNav"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="m7 20 5-5 5 5" /><path d="m7 4 5 5 5-5" /></svg></template>
+      </button>
+      <div class="max-md:max-h-0 overflow-hidden duration-200 transition-all" :style="showNav ? 'max-height: ' + $refs.navigation.offsetHeight + 'px' : ''">
+        <div x-ref="navigation" class="max-md:border max-md:rounded-md max-md:p-4 max-md:text-sm">
+          
+
+
+  <ul class="flex flex-col gap-y-4">
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe//docs/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Flamel&#39;s recipe
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe//docs/posts/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Deep Researches
+          </a>
+          
+            <button class="ml-auto text-muted-foreground hover:text-inherit transition-all duration-200" @click="open = !open" :class="open ? 'rotate-90' : ''">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m9 18 6-6-6-6" /></svg>
+            </button>
+          
+        </div>
+                    
+          <div class="max-h-0 overflow-hidden duration-200 transition-all" :style="open ? 'max-height: ' + $el.scrollHeight + 'px' : ''" style="max-height: 100%;">
+            
+              
+  <ul class="flex flex-col gap-y-4">
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe//docs/posts/2025-07-06-oscar-health-inc-nyse-oscr/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            奥斯卡健康 (Oscar Health, Inc. - NYSE: OSCR) 投资研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe//docs/posts/2025-07-05-oracle/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none text-primary font-medium">
+            甲骨文公司（Oracle）深度研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+  </ul>
+
+            
+          </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe//docs/about/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            About
+          </a>
+          
+        </div>
+        
+      </li>
+    
+  </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w-full">
+    <div class="prose">
+      <h1 class="!mb-8">甲骨文公司（Oracle）深度研究报告</h1>
+      <p><em>报告日期:</em> 2025年7月4日
+<em>评级: 买入 (BUY)</em>
+<em>当前股价:</em> $237.32 (截至2025年7月3日收盘)
+<em>12个月目标价:</em> <em>$265.00</em></p>
+<hr>
+<h3 id="1.-%E6%8A%95%E8%B5%84%E6%91%98%E8%A6%81-(executive-summary)"><em>1. 投资摘要 (Executive Summary)</em></h3>
+<p>我们给予甲骨文公司（Oracle）“<em>买入</em>”评级，设定12个月目标价为$265.00。</p>
+<p>甲骨文正处在一个历史性的转型拐点。其云基础设施业务（OCI），尤其在人工智能（AI）计算领域，正展现出爆发式增长潜力。近期与OpenAI签订的价值数十亿美元的“星际之门”（Stargate）数据中心协议，不仅是对其技术实力的权威背书，更标志着公司已成功切入AI时代最核心的价值链。</p>
+<p>我们认为，市场正在重新评估甲骨文的定位——从一个增长缓慢的传统软件巨头，转变为一个由AI驱动的高增长云服务提供商。OCI的强劲增长势头，预计将完全抵消其传统本地部署业务的下滑，并驱动公司整体收入实现双位数加速增长。</p>
+<p>尽管公司面临高额负债、激烈的市场竞争以及高管减持等风险，但AI带来的巨大增长机遇和当前相对合理的远期估值，使得其潜在回报远大于风险。我们相信，甲骨文正走在一条价值重塑的正确道路上。</p>
+<hr>
+<h3 id="2.-%E5%85%AC%E5%8F%B8%E6%A6%82%E8%A7%88-(company-overview)"><em>2. 公司概览 (Company Overview)</em></h3>
+<p>甲骨文是一家全球领先的企业级软件和IT解决方案提供商。传统上，其业务以数据库管理系统和本地部署的企业资源规划（ERP）软件为主。近年来，公司战略性地向云计算转型，目前主要业务分为两大块：</p>
+<ol>
+<li>
+<p><em>云服务和授权支持 (Cloud Services and License Support):</em> 包括软件即服务（SaaS）应用、平台即服务（PaaS）和核心的基础设施即服务（IaaS），即Oracle Cloud Infrastructure (OCI)。这是公司未来的增长核心。</p>
+</li>
+<li>
+<p><em>云授权和本地部署授权 (Cloud License and On-Premise License):</em> 传统的软件销售业务，目前正处于战略性收缩阶段。</p>
+</li>
+</ol>
+<hr>
+<h3 id="3.-%E6%A0%B8%E5%BF%83%E6%8A%95%E8%B5%84%E8%AE%BA%E7%82%B9-(investment-thesis)"><em>3. 核心投资论点 (Investment Thesis)</em></h3>
+<p><em>a) AI是决定性催化剂，OCI增长迎来拐点</em></p>
+<p>甲骨文的OCI业务正成为AI浪潮中的“黑马”。最新新闻证实，甲骨文与OpenAI扩大了其“星际之门”项目合作，将为其租赁约4.5吉瓦（GW）的数据中心电力。据报道，该协议从2028财年开始，每年可能为甲骨文带来高达300亿美元的收入。这一里程碑式的合作，强有力地证明了OCI在处理大规模、高性能AI计算负载方面的独特优势，尤其是在其RDMA（远程直接内存访问）集群网络技术上。这不仅锁定了未来数年的巨额收入，更重要的是，它将吸引全球其他AI开发者和大型企业，形成强大的示范效应，从而加速OCI的市场份额扩张。</p>
+<p><em>b) 云业务增长足以抵消传统业务下滑，驱动整体加速增长</em></p>
+<p>财务数据显示，甲骨文的转型已见成效。在最近的季度中，OCI收入同比增长超过50%，而传统的本地部署授权业务则同比下降约15-19%。关键在于，云业务的绝对收入增长已开始超过传统业务的绝对收入下滑。管理层给出了极为乐观的指引：预计2026财年总收入增长15%，2027财年增长20%。这表明公司已越过转型阵痛期，进入由云业务驱动的全新增长轨道。</p>
+<p><em>c) 估值在股价大涨后仍具吸引力，存在重估空间</em></p>
+<p>尽管甲骨文股价在过去一年上涨了约66%，但其估值仍有上升空间。当前远期市盈率（Forward P/E）约为33倍，虽然高于其历史平均水平，但与其新的“AI增长股”身份相比，仍属合理。作为对比，其他受益于AI的科技巨头享有更高的估值溢价。我们认为，随着市场逐渐消化其与OpenAI合作的全部潜力并见证其业绩持续兑现，甲骨文的估值倍数有望进一步提升。目前分析师平均目标价（$215.22）显著低于当前股价，这主要是因为股价因重大利好消息上涨过快，分析师模型更新滞后所致。Stifel等投行近期已将其评级上调至“买入”，预示着华尔街共识正在向更乐观的方向调整。</p>
+<hr>
+<h3 id="4.-%E8%B4%A2%E5%8A%A1%E4%B8%8E%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90-(financial-%26-technical-analysis)"><em>4. 财务与技术分析 (Financial &amp; Technical Analysis)</em></h3>
+<p><em>a) 财务状况</em></p>
+<ul>
+<li>
+<p><em>收入与盈利:</em> 最新季度（截至2025年5月31日）总收入达到159亿美元，呈现加速增长态势。营业利润率维持在32.48%的健康水平，显示出公司在转型期间仍具备强大的盈利能力。</p>
+</li>
+<li>
+<p><em>资产负债表:</em> <em>高负债是主要关注点</em>。公司的债务股本比（Debt to Equity）高达519.59。然而，其债务的有效利率据报道约为3.90%，在当前利率环境下尚属可控。公司强劲的盈利和现金流是其偿债能力的重要保障。但值得注意的是，为支持数据中心建设，公司预计明年资本支出将高达250亿美元，可能需要进一步融资，这将对资产负债表构成压力。</p>
+</li>
+</ul>
+<p><em>b) 估值对比</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">指标 (Metric)</th>
+<th style="text-align:left">Oracle (ORCL)</th>
+<th style="text-align:left">行业平均 (Software - Infra)</th>
+<th style="text-align:left">板块平均 (Technology)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">市盈率 (P/E)</td>
+<td style="text-align:left">54.68</td>
+<td style="text-align:left">46.17</td>
+<td style="text-align:left">41.87</td>
+</tr>
+<tr>
+<td style="text-align:left">远期市盈率 (Fwd P/E)</td>
+<td style="text-align:left">33.15</td>
+<td style="text-align:left">33.60</td>
+<td style="text-align:left">27.25</td>
+</tr>
+<tr>
+<td style="text-align:left">PEG比率</td>
+<td style="text-align:left">2.40</td>
+<td style="text-align:left">2.82</td>
+<td style="text-align:left">2.21</td>
+</tr>
+<tr>
+<td style="text-align:left">股息率 (Div. Yield)</td>
+<td style="text-align:left">0.91%</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<p>甲骨文的远期市盈率与行业平均水平相当，但考虑到其高于行业的预期增长率，其PEG比率显得更具吸引力。</p>
+<p><em>c) 技术与市场情绪</em></p>
+<ul>
+<li>
+<p><em>股价表现:</em> 股价处于强劲的上升通道，位于52周高点附近。</p>
+</li>
+<li>
+<p><em>技术指标:</em> 20日、50日、200日移动均线呈多头排列，MACD和ADX等趋势指标显示强势。然而，RSI（相对强弱指数）为80.34，已进入“超买”区间，暗示短期可能出现技术性回调或盘整。</p>
+</li>
+<li>
+<p><em>期权市场:</em> 看跌/看涨期权比率（Put/Call Ratio）仅为0.28，显示出极度乐观的市场情绪。期权隐含波动率（IV）处于高位，且期限结构呈“现货溢价”（Backwardation），表明市场正围绕近期重磅新闻进行激烈博弈。</p>
+</li>
+</ul>
+<hr>
+<h3 id="5.-%E4%B8%BB%E8%A6%81%E9%A3%8E%E9%99%A9-(key-risks)"><em>5. 主要风险 (Key Risks)</em></h3>
+<ol>
+<li>
+<p><em>高额负债与资本支出压力:</em> 这是最主要的风险。为满足AI客户需求而进行的大规模数据中心建设将消耗巨额资本，可能导致债务进一步攀升，并对短期自由现金流产生负面影响。</p>
+</li>
+<li>
+<p><em>激烈的市场竞争:</em> 云计算市场由亚马逊（AWS）、微软（Azure）和谷歌（GCP）主导。尽管OCI在特定领域表现出色，但整体市场份额仍然落后，面临持续的价格和技术竞争压力。</p>
+</li>
+<li>
+<p><em>高管密集减持:</em> CEO Safra Catz在6月底股价高位时，通过行权卖出了大量股票。虽然这通常是预设的10b5-1交易计划的一部分，用于个人财务规划和税务目的，但如此大规模和集中的减持，可能被市场解读为负面信号，值得投资者密切关注。</p>
+</li>
+<li>
+<p><em>执行风险:</em> 在全球范围内快速建设和运营如此大规模的数据中心，涉及复杂的供应链、技术集成和监管审批，存在项目延迟或成本超支的执行风险。</p>
+</li>
+</ol>
+<hr>
+<h3 id="6.-%E7%BB%93%E8%AE%BA%E4%B8%8E%E6%8A%95%E8%B5%84%E5%BB%BA%E8%AE%AE-(conclusion-%26-recommendation)"><em>6. 结论与投资建议 (Conclusion &amp; Recommendation)</em></h3>
+<p>甲骨文正成功地将自己从一家传统软件公司重塑为AI时代不可或缺的基础设施提供商。与OpenAI的合作是其转型战略成功的决定性证据，为公司打开了前所未有的增长空间。</p>
+<p>我们认为，OCI的爆发式增长将成为未来几年驱动公司价值的核心引擎，其增长潜力和对公司整体估值的提振作用，尚未被市场完全定价。</p>
+<p>因此，我们给予甲骨文“<em>买入”评级。我们设定的12个月目标价为$265.00</em>，这相当于基于2026财年普遍预期的每股收益（EPS）给予约37倍的远期市盈率。我们认为，鉴于其强化的增长前景和在AI领域的战略卡位，这一估值是合理的。建议投资者在任何因市场波动或技术性回调出现的机会时，积极布局。</p>
+
+    </div>
+    
+  
+  
+  
+  
+    <footer class="flex gap-x-4 mt-8 pt-4 border-t">
+      
+        <a href="/docs/posts/2025-07-06-oscar-health-inc-nyse-oscr/" class="button-outline flex items-center gap-x-2 truncate">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m15 18-6-6 6-6" /></svg>
+          <span class="max-w-1/2 truncate">奥斯卡健康 (Oscar Health, Inc. - NYSE: OSCR) 投资研究报告</span>
+        </a>
+      
+      
+        <a href="/docs/about/" class="button-outline flex items-center gap-x-2 ml-auto truncate">
+          <span class="max-w-1/2 truncate">About</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m9 18 6-6-6-6" /></svg>
+        </a>
+      
+      </footer>
+  
+
+  </div>
+  
+  <div class="w-64 max-lg:hidden">
+    <div class="sticky top-16 text-sm">
+      <h2 class="font-semibold track-tight">On this page</h2>
+      <nav class="toc" >
+        <ol><li><a href="#1.-%E6%8A%95%E8%B5%84%E6%91%98%E8%A6%81-(executive-summary)">1. 投资摘要 (Executive Summary)</a></li><li><a href="#2.-%E5%85%AC%E5%8F%B8%E6%A6%82%E8%A7%88-(company-overview)">2. 公司概览 (Company Overview)</a></li><li><a href="#3.-%E6%A0%B8%E5%BF%83%E6%8A%95%E8%B5%84%E8%AE%BA%E7%82%B9-(investment-thesis)">3. 核心投资论点 (Investment Thesis)</a></li><li><a href="#4.-%E8%B4%A2%E5%8A%A1%E4%B8%8E%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90-(financial-%26-technical-analysis)">4. 财务与技术分析 (Financial &amp; Technical Analysis)</a></li><li><a href="#5.-%E4%B8%BB%E8%A6%81%E9%A3%8E%E9%99%A9-(key-risks)">5. 主要风险 (Key Risks)</a></li><li><a href="#6.-%E7%BB%93%E8%AE%BA%E4%B8%8E%E6%8A%95%E8%B5%84%E5%BB%BA%E8%AE%AE-(conclusion-%26-recommendation)">6. 结论与投资建议 (Conclusion &amp; Recommendation)</a></li></ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<link x-bind:href="darkMode ? 'https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css' : 'https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github.min.css'" rel="stylesheet">
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/yaml.min.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function() { hljs.highlightAll(); });</script>
+</body>
+</html>
