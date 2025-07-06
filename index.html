@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  x-data="{
+    darkMode: localStorage.getItem('dark') ? localStorage.getItem('dark') === 'true' : window.matchMedia('(prefers-color-scheme: dark)').matches
+  }"
+  x-init="$watch('darkMode', val => localStorage.setItem('dark', val))"
+  x-bind:class="{ 'dark': darkMode }">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Flamel&#39;s recipe: Flamel&#39;s recipe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="LLM驱动的美股金融分析频道。Flamel，尼古拉·弗拉梅尔，法国瓦卢瓦王朝炼金术士，对传奇物质─贤者之石的研究使他闻名于世。"/>
+  <link rel="stylesheet" type="text/css" href="/styles.css?build=1751811214819"/>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Flamel&#39;s recipe: Flamel&#39;s recipe"/>
+  <meta property="og:description" content="LLM驱动的美股金融分析频道。Flamel，尼古拉·弗拉梅尔，法国瓦卢瓦王朝炼金术士，对传奇物质─贤者之石的研究使他闻名于世。"/>
+  <meta property="og:url" content="https://pagescms.org/"/>
+  <meta property="og:image" content="https://pagescms.org/cover@2x.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@pagescms"/>
+  <meta name="twitter:url" content="https://pagescms.org/"/>
+  <meta name="twitter:title" content="Flamel&#39;s recipe: Flamel&#39;s recipe"/>
+  <meta name="twitter:description" content="LLM驱动的美股金融分析频道。Flamel，尼古拉·弗拉梅尔，法国瓦卢瓦王朝炼金术士，对传奇物质─贤者之石的研究使他闻名于世。"/>
+  <meta name="twitter:image" content="https://pagescms.org/cover@2x.png"/>
+  <script src="/js/alpine.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-background antialiased font-inter">
+  <header class="border-b flex items-center gap-x-4 py-2 px-4 lg:py-3 lg:px-6 mx-auto sticky top-0 w-full bg-background z-50">
+  <a class="inline-flex items-center" href="/">
+    <svg class="max-sm:h-4 max-sm:w-4 h-5 w-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 4.8C0 2.14903 2.14903 0 4.8 0H12.0118C13.2848 0 14.5057 0.505713 15.4059 1.40589L22.5941 8.59411C23.4943 9.49429 24 10.7152 24 11.9882V19.2C24 21.851 21.851 24 19.2 24H4.8C2.14903 24 0 21.851 0 19.2V4.8Z"/>
+    </svg>
+    <span class="hidden sm:inline-block ml-2 text-sm font-semibold">Flamel's recipe</span>
+  </a>
+  <a class="ml-auto text-sm font-medium text-muted-foreground hover:text-primary !text-primary font-medium" href="/docs/about/">
+    About
+  </a>
+  <a class="text-sm font-medium text-muted-foreground hover:text-primary " href="/docs">
+    Blogs
+  </a>
+  <a class="flex gap-x-1 items-center text-sm font-medium text-muted-foreground hover:text-primary" href="https://t.me/finance_tools_mcp" target="_blank">
+    Telegram
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3 w-3"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
+  </a>
+</header>
+
+  <div class="px-4 lg:px-8">
+  <div class="max-w-xl mx-auto my-24 lg:my-28 text-center">
+    
+      <a class="rounded-full bg-muted text-sm h-8 px-4 inline-flex items-center mb-4 hover:underline underline-offset-2" href="https://github.com/pages-cms/pages-cms/discussions/128">
+        <p>Powered by pages-cms!</p>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3 w-3 shrink-0 ml-1"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+      </a>
+    
+    <div class="space-y-8">
+      <h1 class="font-semibold tracking-tight text-4xl lg:text-6xl">Flamel&#39;s recipe</h1>
+      <p class="text-muted-foreground md:text-lg">LLM驱动的美股金融分析频道。Flamel，尼古拉·弗拉梅尔，法国瓦卢瓦王朝炼金术士，对传奇物质─贤者之石的研究使他闻名于世。</p>
+      <div class="flex max-md:flex-col md:gap-x-4 max-md:gap-y-4 justify-center">
+        <a class="button !text-base !h-12 !px-8" href="/docs/posts">往期报告</a>
+      </div>
+    </div>
+  </div>
+
+  <a href="/docs/posts" target="_blank" class="rounded-2xl overflow-hidden max-w-6xl mx-auto block relative group bg-neutral-950 mb-12 cursor-pointer">
+    <img class="w-full group-hover:opacity-90 transition-opacity block dark:hidden" src="/media/screenshots/screenshot-v0-july-06.png" alt="Screenshot (light mode)"/>
+    <img class="w-full group-hover:opacity-90 transition-opacity hidden dark:block" src="/media/screenshots/screenshot-v0-july-06.png" alt="Screenshot (dark mode)"/>
+    <div class="button flex gap-x-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !rounded-full group-hover:scale-105 duration-1000 !transition-transform">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 -ml-1"><circle cx="12" cy="12" r="10" /><polygon points="10 8 16 12 10 16 10 8" /></svg>
+      <span class="max-sm:hidden">Watch the intro</span>
+      <span class="sm:hidden">Intro</span>
+    </div>
+  </a>
+
+
+
+</div>
+
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7a480a97e93340c1a837ad9c764aa3b9"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

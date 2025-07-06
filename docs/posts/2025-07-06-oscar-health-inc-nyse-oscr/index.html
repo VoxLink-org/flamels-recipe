@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  x-data="{
+    darkMode: localStorage.getItem('dark') ? localStorage.getItem('dark') === 'true' : window.matchMedia('(prefers-color-scheme: dark)').matches
+  }"
+  x-init="$watch('darkMode', val => localStorage.setItem('dark', val))"
+  x-bind:class="{ 'dark': darkMode }">
+<head>
+  <meta charset="UTF-8"/>
+  <title>奥斯卡健康 (Oscar Health, Inc. - NYSE: OSCR) 投资研究报告 - Flamel&#39;s recipe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="The LLM-powered financial deep research agent, named after the greatest alchemist."/>
+  <link rel="stylesheet" type="text/css" href="/styles.css?build=1751811214866"/>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="奥斯卡健康 (Oscar Health, Inc. - NYSE: OSCR) 投资研究报告 - Flamel&#39;s recipe"/>
+  <meta property="og:description" content="The LLM-powered financial deep research agent, named after the greatest alchemist."/>
+  <meta property="og:url" content="https://pagescms.org/docs/posts/2025-07-06-oscar-health-inc-nyse-oscr/"/>
+  <meta property="og:image" content="https://pagescms.org/cover@2x.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@pagescms"/>
+  <meta name="twitter:url" content="https://pagescms.org/docs/posts/2025-07-06-oscar-health-inc-nyse-oscr/"/>
+  <meta name="twitter:title" content="奥斯卡健康 (Oscar Health, Inc. - NYSE: OSCR) 投资研究报告 - Flamel&#39;s recipe"/>
+  <meta name="twitter:description" content="The LLM-powered financial deep research agent, named after the greatest alchemist."/>
+  <meta name="twitter:image" content="https://pagescms.org/cover@2x.png"/>
+  <script src="/js/alpine.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-background antialiased font-inter">
+  <header class="border-b flex items-center gap-x-4 py-2 px-4 lg:py-3 lg:px-6 mx-auto sticky top-0 w-full bg-background z-50">
+  <a class="inline-flex items-center" href="/">
+    <svg class="max-sm:h-4 max-sm:w-4 h-5 w-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 4.8C0 2.14903 2.14903 0 4.8 0H12.0118C13.2848 0 14.5057 0.505713 15.4059 1.40589L22.5941 8.59411C23.4943 9.49429 24 10.7152 24 11.9882V19.2C24 21.851 21.851 24 19.2 24H4.8C2.14903 24 0 21.851 0 19.2V4.8Z"/>
+    </svg>
+    <span class="hidden sm:inline-block ml-2 text-sm font-semibold">Flamel's recipe</span>
+  </a>
+  <a class="ml-auto text-sm font-medium text-muted-foreground hover:text-primary " href="/docs/about/">
+    About
+  </a>
+  <a class="text-sm font-medium text-muted-foreground hover:text-primary !text-primary" href="/docs">
+    Blogs
+  </a>
+  <a class="flex gap-x-1 items-center text-sm font-medium text-muted-foreground hover:text-primary" href="https://t.me/finance_tools_mcp" target="_blank">
+    Telegram
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3 w-3"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
+  </a>
+</header>
+
+  <div class="flex max-md:flex-col max-w-7xl mx-auto px-4 my-8 lg:px-8 lg:my-12 gap-x-8">
+  <div class="md:w-80 max-md:mb-4">
+    <div class="navigation md:pr-8 md:border-r" x-data="{ showNav: false }">
+      <button @click="showNav = !showNav" class="button-outline flex items-center gap-x-2 w-full md:hidden mb-2">
+        <span x-text="showNav ? 'Hide navigation' : 'Show navigation'"></span>
+        <template x-if="!showNav"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="m7 15 5 5 5-5" /><path d="m7 9 5-5 5 5" /></svg></template>
+        <template x-if="showNav"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="m7 20 5-5 5 5" /><path d="m7 4 5 5 5-5" /></svg></template>
+      </button>
+      <div class="max-md:max-h-0 overflow-hidden duration-200 transition-all" :style="showNav ? 'max-height: ' + $refs.navigation.offsetHeight + 'px' : ''">
+        <div x-ref="navigation" class="max-md:border max-md:rounded-md max-md:p-4 max-md:text-sm">
+          
+
+
+  <ul class="flex flex-col gap-y-4">
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/docs/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Flamel&#39;s recipe
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/docs/posts/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Deep Researches
+          </a>
+          
+            <button class="ml-auto text-muted-foreground hover:text-inherit transition-all duration-200" @click="open = !open" :class="open ? 'rotate-90' : ''">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m9 18 6-6-6-6" /></svg>
+            </button>
+          
+        </div>
+                    
+          <div class="max-h-0 overflow-hidden duration-200 transition-all" :style="open ? 'max-height: ' + $el.scrollHeight + 'px' : ''" style="max-height: 100%;">
+            
+              
+  <ul class="flex flex-col gap-y-4">
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/docs/posts/2025-07-06-oscar-health-inc-nyse-oscr/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none text-primary font-medium">
+            奥斯卡健康 (Oscar Health, Inc. - NYSE: OSCR) 投资研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+  </ul>
+
+            
+          </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/docs/about/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            About
+          </a>
+          
+        </div>
+        
+      </li>
+    
+  </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w-full">
+    <div class="prose">
+      <h1 class="!mb-8">奥斯卡健康 (Oscar Health, Inc. - NYSE: OSCR) 投资研究报告</h1>
+      <p><strong>报告日期:</strong> 2025年7月6日</p>
+<p><strong>评级: 持有 (Hold) / 投机性买入 (Speculative Buy)</strong></p>
+<p><strong>当前股价 (2025/07/03):</strong> 16.47美元</p>
+<p><strong>分析师平均目标价:</strong> 17.49美元</p>
+<hr>
+<h3 id="1.-%E6%A0%B8%E5%BF%83%E6%91%98%E8%A6%81-(executive-summary)">1. 核心摘要 (Executive Summary)</h3>
+<p>本报告旨在全面评估奥斯卡健康（OSCR）的投资价值。奥斯卡健康是一家以技术为驱动的健康保险公司，近期在实现盈利方面取得了重大进展，其2025年第一季度财务业绩尤为亮眼，收入和净利润均超出市场预期。这一强劲的基本面改善，加上其在年轻、注重健康的消费群体中的独特定位，构成了其核心的看涨理由。</p>
+<p>然而，该股近期经历了剧烈抛售，股价从6月底的23美元高点暴跌超过25%。此次下跌主要由外部因素驱动：<strong>1) 行业性恐慌</strong>，源于其竞争对手Centene (CNC)下调业绩指引以及对政府医疗补助（Medicaid）支出削减的担忧；<strong>2) 分析师下调评级</strong>，包括巴克莱银行（Barclays）给予的“减持”初始评级。</p>
+<p><strong>我们认为，OSCR目前处于一个机遇与风险并存的十字路口。</strong></p>
+<ul>
+<li>
+<p><strong>对于风险承受能力较高的投资者</strong>，此次由行业情绪驱动而非公司自身基本面恶化导致的股价回调，可能提供了一个**“投机性买入”**的机会。该股高达15%的空头头寸比例，也为潜在的轧空行情埋下伏笔。</p>
+</li>
+<li>
+<p><strong>对于稳健型投资者</strong>，鉴于其远高于行业平均水平的估值、极高的股价波动性以及悬而未决的监管风险，我们建议**“持有”**评级，等待更多企稳信号，例如8月6日即将发布的第二季度财报。</p>
+</li>
+</ul>
+<p><strong>核心观点:</strong> OSCR的长期增长故事依然引人注目，但短期内市场情绪和政策不确定性是其面临的最大阻力。</p>
+<hr>
+<h3 id="2.-%E5%85%AC%E5%8F%B8%E6%A6%82%E8%A7%88-(company-overview)">2. 公司概览 (Company Overview)</h3>
+<p>奥斯卡健康成立于2012年，是一家旨在通过技术、数据和人性化设计来重塑健康保险行业的公司。其主要业务是为个人、家庭和小型企业提供基于美国平价医疗法案（ACA）市场的健康保险计划。公司的核心竞争力在于其数字优先的平台，该平台通过移动应用、远程医疗服务和个性化护理团队，提升了会员参与度和满意度，并致力于降低医疗成本。</p>
+<ul>
+<li>
+<p><strong>行业:</strong> 医疗保健计划 (Healthcare Plans)</p>
+</li>
+<li>
+<p><strong>板块:</strong> 医疗保健 (Healthcare)</p>
+</li>
+<li>
+<p><strong>市值:</strong> 约42亿美元</p>
+</li>
+<li>
+<p><strong>关键高管:</strong> Mark Bertolini (CEO), Joshua Kushner (联合创始人兼副主席)</p>
+</li>
+</ul>
+<hr>
+<h3 id="3.-%E6%8A%95%E8%B5%84%E8%AE%BA%E7%82%B9-(investment-thesis)">3. 投资论点 (Investment Thesis)</h3>
+<h4 id="3.1-%E7%9C%8B%E6%B6%A8%E7%90%86%E7%94%B1-(bull-case)">3.1 看涨理由 (Bull Case)</h4>
+<ol>
+<li><strong>财务状况显著改善，盈利路径清晰:</strong></li>
+</ol>
+<ul>
+<li>
+<p>OSCR在2025年第一季度（截至3月31日）实现了创纪录的业绩，总收入达到30亿美元，净利润高达2.75亿美元。这标志着公司在连续多年亏损后，已步入可持续盈利的轨道。</p>
+</li>
+<li>
+<p>公司在过去四个季度中有两个季度实现盈利，显示出其商业模式的有效性和成本控制能力的增强。</p>
+</li>
+</ul>
+<ol start="2">
+<li><strong>受益于长期人口趋势:</strong></li>
+</ol>
+<ul>
+<li>CNBC的一篇报道指出，Z世代和千禧一代正引领着健康与保健的消费新趋势。OSCR以其科技感和用户友好的平台，天然契合了这部分年轻、数字化原生代的需求，具备长期增长潜力。</li>
+</ul>
+<ol start="3">
+<li><strong>近期抛售或创造战略性买入点:</strong></li>
+</ol>
+<ul>
+<li>股价从近期高点的大幅回调，主要受累于行业负面情绪，而非公司自身问题。当前16.47美元的股价，已接近公司联合创始人Joshua Kushner在2024年11月约16.9美元价位大举增持的水平，这可能是一个重要的心理和估值支撑位。</li>
+</ul>
+<ol start="4">
+<li><strong>高空头头寸的潜在催化剂:</strong></li>
+</ol>
+<ul>
+<li>该股的空头浮动比例高达15.12%。如果公司在8月6日的财报中再次交出超预期的业绩，极有可能引发猛烈的轧空行情（Short Squeeze），导致股价快速上涨。</li>
+</ul>
+<h4 id="3.2-%E4%B8%BB%E8%A6%81%E9%A3%8E%E9%99%A9-(bear-case)">3.2 主要风险 (Bear Case)</h4>
+<ol>
+<li><strong>极高的股价波动性:</strong></li>
+</ol>
+<ul>
+<li>OSCR的Beta值为1.73，年化波动率高达81%，意味着其股价波动远超市场平均水平。如7月2日的暴跌所示，该股极易受到市场情绪和新闻的影响，不适合风险规避型投资者。</li>
+</ul>
+<ol start="2">
+<li><strong>监管和政策不确定性:</strong></li>
+</ol>
+<ul>
+<li>近期新闻显示，市场对美国政府可能削减Medicaid支出的担忧，已对整个健康保险板块造成了巨大压力。作为高度依赖ACA市场的公司，任何针对该法案的不利政策变动都将对OSCR的业务构成直接威胁。</li>
+</ul>
+<ol start="3">
+<li><strong>估值相对昂贵:</strong></li>
+</ol>
+<ul>
+<li>尽管股价下跌，OSCR的远期市盈率（Forward P/E）仍为29.4倍，而其所在的医疗保健计划行业平均水平仅为10.4倍。这表明市场对其增长给予了极高的期望，任何未达预期的表现都可能导致股价再次承压。</li>
+</ul>
+<ol start="4">
+<li><strong>华尔街分析师情绪转向谨慎:</strong></li>
+</ol>
+<ul>
+<li>7月2日，巴克莱银行给予“减持”评级，雷蒙德·詹姆斯（Raymond James）也将其评级从“跑赢大盘”下调至“与大盘持平”。分析师态度的转变，可能预示着机构投资者信心的动摇。</li>
+</ul>
+<hr>
+<h3 id="4.-%E8%B4%A2%E5%8A%A1%E4%B8%8E%E4%BC%B0%E5%80%BC%E5%88%86%E6%9E%90-(financial-%26-valuation-analysis)">4. 财务与估值分析 (Financial &amp; Valuation Analysis)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">关键指标 (Key Metrics)</th>
+<th style="text-align:left">Oscar Health (OSCR)</th>
+<th style="text-align:left">行业平均 (Healthcare Plans)</th>
+<th style="text-align:left">板块平均 (Healthcare)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>当前股价</strong></td>
+<td style="text-align:left">$16.47</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>市盈率 (Trailing P/E)</strong></td>
+<td style="text-align:left">41.18x</td>
+<td style="text-align:left">13.59x</td>
+<td style="text-align:left">27.72x</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>远期市盈率 (Forward P/E)</strong></td>
+<td style="text-align:left">29.41x</td>
+<td style="text-align:left">10.42x</td>
+<td style="text-align:left">16.22x</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>市净率 (P/B)</strong></td>
+<td style="text-align:left">3.13x</td>
+<td style="text-align:left">1.95x</td>
+<td style="text-align:left">4.15x</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>股本回报率 (ROE)</strong></td>
+<td style="text-align:left">10.48%</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>净利润率 (Profit Margin)</strong></td>
+<td style="text-align:left">1.22%</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>分析:</strong></p>
+<ul>
+<li>
+<p><strong>盈利能力:</strong> 2025年第一季度收入同比增长约43%（30亿 vs 21亿），并实现2.75亿美元净利润，而去年同期为1.77亿美元。这一强劲的增长和盈利能力是核心亮点。</p>
+</li>
+<li>
+<p><strong>估值:</strong> OSCR的估值显著高于其直接竞争对手，但与其作为一家“科技+医疗”公司的定位相符，市场愿意为其高增长性支付溢价。然而，与行业平均水平的巨大差距也意味着其估值泡沫风险较高。</p>
+</li>
+</ul>
+<hr>
+<h3 id="5.-%E6%8A%80%E6%9C%AF%E9%9D%A2%E4%B8%8E%E5%B8%82%E5%9C%BA%E6%83%85%E7%BB%AA-(technical-%26-sentiment-analysis)">5. 技术面与市场情绪 (Technical &amp; Sentiment Analysis)</h3>
+<ul>
+<li>
+<p><strong>股价走势:</strong> 股价在7月2日放量暴跌，跌破了20日移动平均线，短期趋势转为向下。当前价格在16.21美元附近找到了初步支撑。</p>
+</li>
+<li>
+<p><strong>技术指标:</strong> 相对强弱指数（RSI）已从超买区域回落至46.56的中性水平，表明抛售压力有所缓解。</p>
+</li>
+<li>
+<p><strong>期权市场:</strong></p>
+</li>
+<li>
+<p><strong>隐含波动率 (IV):</strong> 高达102.4%，预示市场预期未来股价将有剧烈波动，尤其是在8月财报前后。</p>
+</li>
+<li>
+<p><strong>看跌/看涨比率 (Put/Call Ratio):</strong> 为0.63，显示看涨期权的交易活动多于看跌期权，市场情绪中仍存在看多力量。</p>
+</li>
+<li>
+<p><strong>波动率期限结构:</strong> 呈“现货溢价”（Backwardation）状态，即短期IV高于长期IV，反映了市场对近期不确定性（如财报、政策新闻）的极度担忧。</p>
+</li>
+</ul>
+<hr>
+<h3 id="6.-%E5%86%85%E9%83%A8%E4%BA%BA%E4%BA%A4%E6%98%93%E4%B8%8E%E5%88%86%E6%9E%90%E5%B8%88%E8%AF%84%E7%BA%A7-(insider-trading-%26-analyst-ratings)">6. 内部人交易与分析师评级 (Insider Trading &amp; Analyst Ratings)</h3>
+<ul>
+<li>
+<p><strong>内部人交易:</strong> 过去一年，公司高管有多次出售记录，这在科技公司中较为常见（通常与股权激励兑现有关）。但值得注意的是，联合创始人Joshua Kushner及其关联基金在2024年11月以接近当前股价的水平进行了大量购买，这是一个积极的信号。</p>
+</li>
+<li>
+<p><strong>分析师评级:</strong> 7位分析师的平均评级为“持有”。平均目标价为17.49美元，较当前股价上涨空间有限。然而，最高目标价为28.00美元，显示了如果公司能成功执行其战略，股价仍有巨大上涨潜力。近期的评级下调是主要负面因素。</p>
+</li>
+</ul>
+<hr>
+<h3 id="7.-%E7%BB%93%E8%AE%BA%E4%B8%8E%E6%8A%95%E8%B5%84%E5%BB%BA%E8%AE%AE-(conclusion-%26-recommendation)">7. 结论与投资建议 (Conclusion &amp; Recommendation)</h3>
+<p>奥斯卡健康（OSCR）是一家典型的“高风险、高回报”型成长股。其颠覆性的商业模式和近期强劲的财务表现，使其具备成为市场赢家的潜力。然而，投资者必须正视其高昂的估值、剧烈的股价波动以及笼罩在整个行业的政策阴云。</p>
+<p><strong>最终评级：持有 (Hold) / 投机性买入 (Speculative Buy)</strong></p>
+<ul>
+<li><strong>对于能够承受高风险的成长型投资者：</strong></li>
+</ul>
+<p>我们认为，近期由市场恐慌情绪驱动的股价回调是一个潜在的买入机会。可以考虑建立小部分仓位（<strong>投机性买入</strong>），并密切关注8月6日的财报。如果财报再次证实其强劲的增长和盈利能力，股价有望迎来修复甚至反弹。</p>
+<ul>
+<li><strong>对于稳健型和保守型投资者：</strong></li>
+</ul>
+<p>我们建议<strong>持有</strong>或暂时观望。在公司估值回归更合理水平、行业政策风险明朗化、以及股价走势显示出明确的企稳迹象之前，贸然介入的风险较大。等待下一份财报的结果将是更审慎的选择。</p>
+
+    </div>
+    
+  
+  
+  
+  
+    <footer class="flex gap-x-4 mt-8 pt-4 border-t">
+      
+        <a href="/docs/posts/" class="button-outline flex items-center gap-x-2 truncate">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m15 18-6-6 6-6" /></svg>
+          <span class="max-w-1/2 truncate">Deep Researches</span>
+        </a>
+      
+      
+        <a href="/docs/about/" class="button-outline flex items-center gap-x-2 ml-auto truncate">
+          <span class="max-w-1/2 truncate">About</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m9 18 6-6-6-6" /></svg>
+        </a>
+      
+      </footer>
+  
+
+  </div>
+  
+  <div class="w-64 max-lg:hidden">
+    <div class="sticky top-16 text-sm">
+      <h2 class="font-semibold track-tight">On this page</h2>
+      <nav class="toc" >
+        <ol><li><a href="#1.-%E6%A0%B8%E5%BF%83%E6%91%98%E8%A6%81-(executive-summary)">1. 核心摘要 (Executive Summary)</a></li><li><a href="#2.-%E5%85%AC%E5%8F%B8%E6%A6%82%E8%A7%88-(company-overview)">2. 公司概览 (Company Overview)</a></li><li><a href="#3.-%E6%8A%95%E8%B5%84%E8%AE%BA%E7%82%B9-(investment-thesis)">3. 投资论点 (Investment Thesis)</a></li><li><a href="#4.-%E8%B4%A2%E5%8A%A1%E4%B8%8E%E4%BC%B0%E5%80%BC%E5%88%86%E6%9E%90-(financial-%26-valuation-analysis)">4. 财务与估值分析 (Financial &amp; Valuation Analysis)</a></li><li><a href="#5.-%E6%8A%80%E6%9C%AF%E9%9D%A2%E4%B8%8E%E5%B8%82%E5%9C%BA%E6%83%85%E7%BB%AA-(technical-%26-sentiment-analysis)">5. 技术面与市场情绪 (Technical &amp; Sentiment Analysis)</a></li><li><a href="#6.-%E5%86%85%E9%83%A8%E4%BA%BA%E4%BA%A4%E6%98%93%E4%B8%8E%E5%88%86%E6%9E%90%E5%B8%88%E8%AF%84%E7%BA%A7-(insider-trading-%26-analyst-ratings)">6. 内部人交易与分析师评级 (Insider Trading &amp; Analyst Ratings)</a></li><li><a href="#7.-%E7%BB%93%E8%AE%BA%E4%B8%8E%E6%8A%95%E8%B5%84%E5%BB%BA%E8%AE%AE-(conclusion-%26-recommendation)">7. 结论与投资建议 (Conclusion &amp; Recommendation)</a></li></ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<link x-bind:href="darkMode ? 'https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css' : 'https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github.min.css'" rel="stylesheet">
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/yaml.min.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function() { hljs.highlightAll(); });</script>
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7a480a97e93340c1a837ad9c764aa3b9"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
