@@ -1,0 +1,9 @@
+<ul class="flex flex-col gap-y-1">
+  {%- for post in collections.posts | reverse -%}
+    <li>
+      <a href="{{ site.path }}{{ post.url }}" class="flex items-center rounded-lg py-2 font-medium text-sm text-muted-foreground hover:text-primary outline-none{{ ' text-primary' if post.url == page.url }}">
+        {{ post.data.date | date: "%Y-%m-%d" }}: {{ post.data.title }}
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>
