@@ -20,7 +20,7 @@ content:
       - { name: date, label: Date, type: date, required: true }
       - { name: description, label: Description, type: string, options: { maxlength: 180 }}
       - { name: order, label: Order, type: number }
-      - { name: body, label: Body, type: rich-text }
+      - { name: body, label: Body, type: text }
   - label: Home page
     path: src/index.njk
     name: homepage
