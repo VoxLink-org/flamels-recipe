@@ -30,10 +30,10 @@
   <meta name="twitter:image" content="{{ site.path }}/cover@2x.png"/>
   <script src="{{ site.path }}/js/alpine.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {% include "partials/google-analytics.njk" %}
 </head>
 <body class="bg-background antialiased font-inter">
   {% include "partials/header.njk" %}
   {{ content | safe }}
-  {% include "partials/analytics.njk" %}
 </body>
 </html>
