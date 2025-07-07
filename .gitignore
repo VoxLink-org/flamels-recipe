@@ -1,6 +1,5 @@
 node_modules
 _site
-package-lock.json
 .*
 !.gitignore
 !.eleventy.js
