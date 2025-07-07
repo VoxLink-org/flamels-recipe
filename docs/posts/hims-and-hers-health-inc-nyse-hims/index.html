@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  x-data="{
+    darkMode: localStorage.getItem('dark') ? localStorage.getItem('dark') === 'true' : window.matchMedia('(prefers-color-scheme: dark)').matches
+  }"
+  x-init="$watch('darkMode', val => localStorage.setItem('dark', val))"
+  x-bind:class="{ 'dark': darkMode }">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Hims &amp; Hers Health, Inc. (NYSE: HIMS) 投资研究报告 - Flamel&#39;s recipe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="尽管公司的长期增长前景（受益于品牌实力、高客户粘性和技术创新）依然引人注目，但当前的法律和监管风险极高，可能对公司的核心业务和声誉造成实质性损害。**综合考量其高增长潜力与严峻的短期风险，我们给予Hims &amp; Hers Health, Inc. “持有”评级。** 建议投资者在监管和法律问题明朗化之前保持观望，当前股价已基本反映了风险与机遇并存的现状。"/>
+  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1751879105067"/>
+  <link rel="icon" type="image/x-icon" href="/flamels-recipe/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/flamels-recipe/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/flamels-recipe/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/flamels-recipe/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/flamels-recipe/favicon.svg">
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Hims &amp; Hers Health, Inc. (NYSE: HIMS) 投资研究报告 - Flamel&#39;s recipe"/>
+  <meta property="og:description" content="尽管公司的长期增长前景（受益于品牌实力、高客户粘性和技术创新）依然引人注目，但当前的法律和监管风险极高，可能对公司的核心业务和声誉造成实质性损害。**综合考量其高增长潜力与严峻的短期风险，我们给予Hims &amp; Hers Health, Inc. “持有”评级。** 建议投资者在监管和法律问题明朗化之前保持观望，当前股价已基本反映了风险与机遇并存的现状。"/>
+  <meta property="og:url" content="/flamels-recipe/docs/posts/hims-and-hers-health-inc-nyse-hims/"/>
+  <meta property="og:image" content="/flamels-recipe/cover@2x.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@pagescms"/>
+  <meta name="twitter:url" content="/flamels-recipe/docs/posts/hims-and-hers-health-inc-nyse-hims/"/>
+  <meta name="twitter:title" content="Hims &amp; Hers Health, Inc. (NYSE: HIMS) 投资研究报告 - Flamel&#39;s recipe"/>
+  <meta name="twitter:description" content="尽管公司的长期增长前景（受益于品牌实力、高客户粘性和技术创新）依然引人注目，但当前的法律和监管风险极高，可能对公司的核心业务和声誉造成实质性损害。**综合考量其高增长潜力与严峻的短期风险，我们给予Hims &amp; Hers Health, Inc. “持有”评级。** 建议投资者在监管和法律问题明朗化之前保持观望，当前股价已基本反映了风险与机遇并存的现状。"/>
+  <meta name="twitter:image" content="/flamels-recipe/cover@2x.png"/>
+  <script src="/flamels-recipe/js/alpine.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6CD3GQF0RC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6CD3GQF0RC');
+</script>
+
+</head>
+<body class="bg-background antialiased font-inter">
+  <header class="border-b flex items-center gap-x-4 py-2 px-4 lg:py-3 lg:px-6 mx-auto sticky top-0 w-full bg-background z-50">
+  <a class="inline-flex items-center" href="/flamels-recipe">
+    <svg class="max-sm:h-4 max-sm:w-4 h-5 w-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 4.8C0 2.14903 2.14903 0 4.8 0H12.0118C13.2848 0 14.5057 0.505713 15.4059 1.40589L22.5941 8.59411C23.4943 9.49429 24 10.7152 24 11.9882V19.2C24 21.851 21.851 24 19.2 24H4.8C2.14903 24 0 21.851 0 19.2V4.8Z"/>
+    </svg>
+    <span class="hidden sm:inline-block ml-2 text-sm font-semibold">Flamel's recipe</span>
+  </a>
+  <a class="ml-auto text-sm font-medium text-muted-foreground hover:text-primary " href="/flamels-recipe/docs/about/">
+    About
+  </a>
+  <a class="text-sm font-medium text-muted-foreground hover:text-primary !text-primary" href="/flamels-recipe/docs">
+    Blogs
+  </a>
+  <a class="flex gap-x-1 items-center text-sm font-medium text-muted-foreground hover:text-primary" href="https://t.me/finance_tools_mcp" target="_blank">
+    Telegram
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3 w-3"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
+  </a>
+</header>
+
+  <div class="flex max-md:flex-col max-w-7xl mx-auto px-4 my-8 lg:px-8 lg:my-12 gap-x-8">
+  <div class="md:w-80 max-md:mb-4">
+    <div class="navigation md:pr-8 md:border-r" x-data="{ showNav: false }">
+      <button @click="showNav = !showNav" class="button-outline flex items-center gap-x-2 w-full md:hidden mb-2">
+        <span x-text="showNav ? 'Hide navigation' : 'Show navigation'"></span>
+        <template x-if="!showNav"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="m7 15 5 5 5-5" /><path d="m7 9 5-5 5 5" /></svg></template>
+        <template x-if="showNav"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="m7 20 5-5 5 5" /><path d="m7 4 5 5 5-5" /></svg></template>
+      </button>
+      <div class="max-md:max-h-0 overflow-hidden duration-200 transition-all" :style="showNav ? 'max-height: ' + $refs.navigation.offsetHeight + 'px' : ''">
+        <div x-ref="navigation" class="max-md:border max-md:rounded-md max-md:p-4 max-md:text-sm">
+          
+
+
+  <ul class="flex flex-col gap-y-4">
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe//docs/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Flamel&#39;s recipe
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe//docs/posts/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Deep Researches
+          </a>
+          
+            <button class="ml-auto text-muted-foreground hover:text-inherit transition-all duration-200" @click="open = !open" :class="open ? 'rotate-90' : ''">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m9 18 6-6-6-6" /></svg>
+            </button>
+          
+        </div>
+                    
+          <div class="max-h-0 overflow-hidden duration-200 transition-all" :style="open ? 'max-height: ' + $el.scrollHeight + 'px' : ''" style="max-height: 100%;">
+            
+              
+  <ul class="flex flex-col gap-y-4">
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe//docs/posts/2025-07-06-oscar-health-inc-nyse-oscr/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            奥斯卡健康 (Oscar Health, Inc. - NYSE: OSCR) 投资研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe//docs/posts/2025-07-05-oracle/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            甲骨文公司（Oracle）深度研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe//docs/posts/hims-and-hers-health-inc-nyse-hims/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none text-primary font-medium">
+            Hims &amp; Hers Health, Inc. (NYSE: HIMS) 投资研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe//docs/posts/comprehensive-investment-research-report-on-palantir-technologies-inc-nyse-pltr/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Comprehensive Investment Research Report on Palantir Technologies Inc. (NYSE: PLTR)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+  </ul>
+
+            
+          </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe//docs/about/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            About
+          </a>
+          
+        </div>
+        
+      </li>
+    
+  </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w-full">
+    <div class="prose">
+      <h1 class="!mb-8">Hims &amp; Hers Health, Inc. (NYSE: HIMS) 投资研究报告</h1>
+      <p><strong>报告日期:</strong> 2025年7月6日
+<strong>评级: 持有 (Hold)</strong>
+<strong>当前股价 (2025-07-03):</strong> $47.98
+<strong>分析师平均目标价:</strong> $48.53</p>
+<hr>
+<h4 id="1.-%E6%8A%A5%E5%91%8A%E6%91%98%E8%A6%81-(executive-summary)"><strong>1. 报告摘要 (Executive Summary)</strong></h4>
+<p>Hims &amp; Hers Health, Inc. (以下简称“Hims”或“公司”) 是一家领先的多品类远程医疗平台，通过其创新的直接面向消费者 (DTC) 模式，在健康与保健领域实现了颠覆性增长。公司财务表现强劲，2025年第一季度收入同比增长111%，并已实现GAAP净利润，显示出其商业模式的强大盈利潜力。其增长动力主要源于个性化医疗服务的深化、在利润丰厚的减肥市场的成功扩张，以及通过收购ZAVA战略性地进入欧洲市场。</p>
+<p>然而，Hims正面临其上市以来最严峻的挑战。近期与诺和诺德 (Novo Nordisk) 合作关系的突然终止，以及由此引发的关于其复合型GLP-1药物业务的监管审查和证券欺诈集体诉讼，为公司的未来蒙上了巨大的不确定性阴影。这些负面事件导致股价从近期高点大幅回调，并反映在高达34.23%的空头浮动比例上。</p>
+<p>尽管公司的长期增长前景（受益于品牌实力、高客户粘性和技术创新）依然引人注目，但当前的法律和监管风险极高，可能对公司的核心业务和声誉造成实质性损害。<strong>综合考量其高增长潜力与严峻的短期风险，我们给予Hims &amp; Hers Health, Inc. “持有”评级。</strong> 建议投资者在监管和法律问题明朗化之前保持观望，当前股价已基本反映了风险与机遇并存的现状。</p>
+<hr>
+<h4 id="2.-%E5%85%AC%E5%8F%B8%E6%A6%82%E8%A7%88-(company-overview)"><strong>2. 公司概览 (Company Overview)</strong></h4>
+<p>Hims &amp; Hers Health, Inc. 是一家在美国运营的远程医疗公司，隶属于消费防御板块下的家居与个人用品行业。公司通过其网站和移动应用程序，为消费者提供在线医疗咨询、个性化处方药以及非处方健康产品。其业务核心是解决消费者难以启齿或不便在线下求医的健康问题，主要覆盖性健康、皮肤科、心理健康和体重管理等领域。凭借其现代化的品牌形象和便捷的订阅模式，Hims成功吸引了大量年轻一代（千禧一代和Z世代）消费者。</p>
+<hr>
+<h4 id="3.-%E6%8A%95%E8%B5%84%E8%AE%BA%E7%82%B9-(investment-thesis-%2F-bull-case)"><strong>3. 投资论点 (Investment Thesis / Bull Case)</strong></h4>
+<ul>
+<li>
+<p><strong>爆炸性的收入增长与盈利能力验证：</strong> Hims的财务增长令人瞩目。2025年第一季度财报显示，公司总收入达到5.86亿美元，同比增长111%；更重要的是，公司实现了4950万美元的净利润，标志着其已从高速增长阶段迈入可持续盈利阶段。持续超预期的每股收益 (EPS) 表现也证明了其卓越的执行力。</p>
+</li>
+<li>
+<p><strong>成功开拓高潜力市场：</strong> 公司在体重管理市场的布局尤为成功。尽管面临监管挑战，但其GLP-1相关产品已成为重要的收入来源。此外，公司于2025年6月宣布收购欧洲领先的数字健康平台ZAVA，此举将为其打开广阔的国际市场，是其长期增长战略的关键一步。</p>
+</li>
+<li>
+<p><strong>强大的品牌护城河与高客户粘性：</strong> Hims已成功在目标客群中建立了强大的品牌认知度。其订阅模式带来了高客户保留率（有数据显示三个月后保留率高达82%），截至2024财年，订阅用户数增至223万，同比增长38%。这种高粘性为公司提供了稳定且可预测的经常性收入。</p>
+</li>
+<li>
+<p><strong>技术驱动的个性化医疗：</strong> 公司战略性地投资于人工智能 (AI)，其MedMatch等AI工具有望通过数据分析提供更精准的个性化治疗方案。这不仅能提升治疗效果和客户体验，长期来看还能通过提高运营效率来扩大其利润空间。</p>
+</li>
+<li>
+<p><strong>受益于宏观健康趋势：</strong> CNBC的新闻指出，Z世代和千禧一代对健康和保健的投入持续增加。Hims的业务完美契合了这一时代趋势，为其提供了持续增长的宏观环境。</p>
+</li>
+</ul>
+<hr>
+<h4 id="4.-%E4%B8%BB%E8%A6%81%E9%A3%8E%E9%99%A9%E4%B8%8E%E6%8C%91%E6%88%98-(key-risks-%26-bear-case)"><strong>4. 主要风险与挑战 (Key Risks &amp; Bear Case)</strong></h4>
+<ul>
+<li>
+<p><strong>严峻的监管与法律风险（核心风险）：</strong></p>
+<ul>
+<li><strong>证券欺诈集体诉讼：</strong> 公司正面临多起证券欺诈集体诉讼，诉讼期为2025年4月29日至6月23日。诉讼指控公司在与诺和诺德的合作以及复合型药物的合规性方面误导了投资者。该诉讼不仅可能导致巨额赔偿，也严重损害了公司信誉。</li>
+<li><strong>FDA对复合型药物的打压：</strong> FDA已宣布司美格鲁肽（Wegovy和Ozempic的活性成分）短缺问题得到解决，这直接威胁到Hims销售复合型GLP-1药物的合法性。该业务线是其近期增长的关键驱动力（约占在线收入的45%），其收缩将对收入造成重大打击。</li>
+<li><strong>与诺和诺德合作终止：</strong> 2025年6月23日，诺和诺德以Hims存在“欺骗性营销”和“非法”销售为由，终止了合作。这是一个重大的战略挫折和信誉污点。</li>
+</ul>
+</li>
+<li>
+<p><strong>激烈的市场竞争与高昂的获客成本 (CAC)：</strong> 远程医疗市场竞争激烈，主要对手包括Roman (Ro)、Keeps和Teladoc等。虽然Hims的品牌强大，但其获客成本依然高昂（不同分析报告估算在$60到$785之间），需要依靠高客户生命周期价值 (LTV) 来维持盈利模式。</p>
+</li>
+<li>
+<p><strong>高估值与股价剧烈波动：</strong> Hims的市盈率（TTM P/E 70.6倍，Forward P/E 104.3倍）远高于行业平均水平，反映了市场对其高增长的预期。然而，这种高估值使其对任何负面消息都极为敏感。近期股价从近$73的高点暴跌至$48，年化波动率高达127.7%，显示出极高的风险。</p>
+</li>
+<li>
+<p><strong>显著的内部人士抛售：</strong> 2025年6月，包括CEO、CFO在内的多位核心高管在股价高位（$50-$60区间）进行了大量股票出售。尽管部分交易与期权行权有关，但如此集中的抛售潮是一个不容忽视的危险信号。</p>
+</li>
+<li>
+<p><strong>极高的空头兴趣：</strong> 高达34.23%的空头浮动比例，表明市场存在强大的看空力量。虽然这可能在利好消息出现时引发轧空行情，但目前它更多地代表了对公司前景的悲观预期和持续的下行压力。</p>
+</li>
+</ul>
+<hr>
+<h4 id="5.-%E8%B4%A2%E5%8A%A1%E5%88%86%E6%9E%90-(financial-analysis)"><strong>5. 财务分析 (Financial Analysis)</strong></h4>
+<ul>
+<li><strong>利润表：</strong> 公司收入呈现指数级增长，毛利率保持在73%以上的健康水平（尽管因高成本的GLP-1药物而从早前的82%有所下降）。已实现正向的营业利润和净利润是其财务状况的里程碑式改善。</li>
+<li><strong>资产负债表：</strong> 截至2025年第一季度，公司拥有2.74亿美元的现金及等价物，财务状况稳健。总债务仅为6340万美元，债务股本比远低于行业平均水平。近期公司成功发行了8.7亿美元的0%利率可转换优先票据（2030年到期），极大地增强了其资本实力，为全球扩张和AI投资提供了充足弹药，但未来可能面临股权稀释。</li>
+<li><strong>估值：</strong> Hims的估值指标（P/E, P/S）显著高于消费防御品行业的平均水平。这一定价反映了其作为成长股的溢价，但也意味着一旦增长放缓或风险兑现，股价将面临巨大的下修压力。</li>
+</ul>
+<hr>
+<h4 id="6.-%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90%E4%B8%8E%E8%82%A1%E4%BB%B7%E8%A1%A8%E7%8E%B0-(technical-analysis-%26-stock-performance)"><strong>6. 技术分析与股价表现 (Technical Analysis &amp; Stock Performance)</strong></h4>
+<p>HIMS股价在2025年上半年经历了一轮波澜壮阔的上涨，但在6月下旬因监管和法律问题急转直下，成交量在6月23日放出天量，表明大量资金在恐慌中离场。目前股价在$48附近，远低于前期高点。短期均线（7日SMA）低于长期均线（30日SMA），呈现空头排列。RSI指标（45.75）处于中性区域，表明股价在暴跌后暂时企稳。MACD指标显示强烈的下行趋势。总体而言，技术面偏空，但暴跌后存在技术性反弹的可能。</p>
+<hr>
+<h4 id="7.-%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E4%B8%8E%E8%A1%8C%E4%B8%9A%E8%83%8C%E6%99%AF-(macroeconomic-%26-industry-context)"><strong>7. 宏观经济与行业背景 (Macroeconomic &amp; Industry Context)</strong></h4>
+<p>当前宏观环境对成长股的挑战与机遇并存。一方面，美联储未来可能降息的预期对高估值成长股有利。另一方面，全球贸易和政治的不确定性增加了市场风险。对Hims而言，最重要的外部因素是远程医疗行业的监管环境。美国FDA对药品（尤其是复合型药物）的监管趋严是行业面临的最大逆风。然而，消费者对便捷、私密医疗服务的需求持续增长，这是驱动行业发展的长期顺风。</p>
+<hr>
+<h4 id="8.-%E7%BB%93%E8%AE%BA%E4%B8%8E%E6%8A%95%E8%B5%84%E5%BB%BA%E8%AE%AE-(conclusion-%26-recommendation)"><strong>8. 结论与投资建议 (Conclusion &amp; Recommendation)</strong></h4>
+<p>Hims &amp; Hers Health, Inc. 是一家典型的“高风险、高回报”的成长型公司。它拥有一个被市场验证的成功商业模式、强劲的增长势头和清晰的扩张路径。然而，公司目前正深陷一场可能动摇其根基的监管与法律风暴。其核心增长点——复合型GLP-1药物业务——前途未卜，与关键合作伙伴的关系破裂，以及面临的集体诉讼，都构成了实质性的威胁。</p>
+<p>分析师的共识评级为“持有”，这恰当地反映了市场的矛盾心态。我们认为，在这些重大不确定性得到解决之前，贸然买入Hims股票的风险过高。</p>
+<p><strong>最终建议：</strong> 我们给予Hims &amp; Hers Health, Inc. <strong>持有 (Hold)</strong> 评级。</p>
+<ul>
+<li><strong>对于新投资者：</strong> 建议保持观望。等待关于集体诉讼和FDA监管行动的进一步明确信息。当前的风险敞口过大，不适合建立新头寸。</li>
+<li><strong>对于现有投资者：</strong> 如果您的风险承受能力较高，可以继续持有，以期公司能够成功渡过危机。但应密切关注事态发展，并设置好止损点，以防范股价因负面消息进一步下跌的风险。</li>
+</ul>
+<p>公司的长期价值最终取决于其能否在合规的框架内继续创新和增长。在尘埃落定之前，谨慎是最佳策略。</p>
+<hr>
+<p><strong>免责声明：</strong> 本报告仅基于提供的知识库信息进行分析，旨在提供信息参考，不构成任何具体的投资建议。投资有风险，入市需谨慎。在做出任何投资决策前，请咨询专业的财务顾问。</p>
+
+    </div>
+    
+  
+  
+  
+  
+    <footer class="flex gap-x-4 mt-8 pt-4 border-t">
+      
+        <a href="/flamels-recipe//docs/posts/2025-07-05-oracle/" class="button-outline flex items-center gap-x-2 truncate">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m15 18-6-6 6-6" /></svg>
+          <span class="max-w-1/2 truncate">甲骨文公司（Oracle）深度研究报告</span>
+        </a>
+      
+      
+        <a href="/flamels-recipe//docs/posts/comprehensive-investment-research-report-on-palantir-technologies-inc-nyse-pltr/" class="button-outline flex items-center gap-x-2 ml-auto truncate">
+          <span class="max-w-1/2 truncate">Comprehensive Investment Research Report on Palantir Technologies Inc. (NYSE: PLTR)</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m9 18 6-6-6-6" /></svg>
+        </a>
+      
+      </footer>
+  
+
+  </div>
+  
+  <div class="w-64 max-lg:hidden">
+    <div class="sticky top-16 text-sm">
+      <h2 class="font-semibold track-tight">On this page</h2>
+      
+    </div>
+  </div>
+</div>
+
+<link x-bind:href="darkMode ? 'https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css' : 'https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github.min.css'" rel="stylesheet">
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/yaml.min.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function() { hljs.highlightAll(); });</script>
+</body>
+</html>
