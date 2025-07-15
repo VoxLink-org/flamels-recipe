@@ -10,8 +10,8 @@
   <meta charset="UTF-8"/>
   <title>Flamel&#39;s recipe: Flamel&#39;s recipe</title>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <meta name="description" content="LLM驱动的美股金融分析频道。"/>
-  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1752595296476"/>
+  <meta name="description" content="LLM powered financial deep research agent"/>
+  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1752601226162"/>
   <link rel="icon" type="image/x-icon" href="/flamels-recipe/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/flamels-recipe/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/flamels-recipe/favicon-16x16.png">
@@ -19,14 +19,14 @@
   <link rel="icon" type="image/svg+xml" href="/flamels-recipe/favicon.svg">
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="Flamel&#39;s recipe: Flamel&#39;s recipe"/>
-  <meta property="og:description" content="LLM驱动的美股金融分析频道。"/>
+  <meta property="og:description" content="LLM powered financial deep research agent"/>
   <meta property="og:url" content="/flamels-recipe/"/>
   <meta property="og:image" content="/flamels-recipe/cover@2x.png"/>
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:site" content="@pagescms"/>
   <meta name="twitter:url" content="/flamels-recipe/"/>
   <meta name="twitter:title" content="Flamel&#39;s recipe: Flamel&#39;s recipe"/>
-  <meta name="twitter:description" content="LLM驱动的美股金融分析频道。"/>
+  <meta name="twitter:description" content="LLM powered financial deep research agent"/>
   <meta name="twitter:image" content="/flamels-recipe/cover@2x.png"/>
   <script src="/flamels-recipe/js/alpine.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -42,22 +42,10 @@
 
 </head>
 <body class="bg-background antialiased font-inter">
-  <header class="border-b flex items-center gap-x-4 py-2 px-4 lg:py-3 lg:px-6 mx-auto sticky top-0 w-full bg-background z-50">
-  <a class="inline-flex items-center" href="/flamels-recipe">
-    <img class="max-sm:h-4 max-sm:w-4 h-5 w-5" src="/flamels-recipe/favicon-32x32.png" />
-    <span class="hidden sm:inline-block ml-2 text-sm font-semibold">Flamel's recipe</span>
-  </a>
-  <a class="ml-auto text-sm font-medium text-muted-foreground hover:text-primary !text-primary font-medium" href="/flamels-recipe/docs/about/">
-    About
-  </a>
-  <a class="text-sm font-medium text-muted-foreground hover:text-primary " href="/flamels-recipe/docs">
-    Blogs
-  </a>
-  <a class="flex gap-x-1 items-center text-sm font-medium text-muted-foreground hover:text-primary" href="https://t.me/finance_tools_mcp" target="_blank">
-    Telegram
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3 w-3"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
-  </a>
-</header>
+  <site-header
+  sitepath="/flamels-recipe"
+  pageurl="/"
+></site-header>
 
   <div class="px-4 lg:px-8">
   <div class="max-w-xl mx-auto my-24 lg:my-28 text-center">
@@ -70,11 +58,11 @@
     
     <div class="space-y-8">
       <h1 class="font-semibold tracking-tight text-4xl lg:text-6xl">Flamel&#39;s recipe</h1>
-      <p class="text-muted-foreground md:text-lg">LLM驱动的美股金融分析频道。</p>
+      <p class="text-muted-foreground md:text-lg">LLM powered financial deep research agent</p>
       <p class="text-muted-foreground md:text-sm">Flamel，尼古拉·弗拉梅尔，法国瓦卢瓦王朝炼金术士，对传奇物质─贤者之石的研究使他闻名于世。</p>
       <div class="flex max-md:flex-col md:gap-x-4 max-md:gap-y-4 justify-center">
-        <a class="button !text-base !h-12 !px-8" href="/flamels-recipe/docs/posts">往期报告</a>
-        <a class="button-outline !text-base !h-12 !px-8" href="https://t.me/finance_tools_mcp" target="_blank">Join our Chanel</a>
+        <a class="button !text-base !h-12 !px-8" href="/flamels-recipe/docs/posts">Reports</a>
+        <a class="button-outline !text-base !h-12 !px-8" href="https://t.me/finance_tools_mcp" target="_blank">Join our Channel</a>
       </div>
     </div>
   </div>
@@ -93,5 +81,6 @@
 
 </div>
 
+  <script src="/flamels-recipe/js/site-header.js" type="module" defer></script>
 </body>
 </html>
