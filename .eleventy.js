@@ -3,11 +3,28 @@ const markdownItAnchor = require("markdown-it-anchor");
 const pluginTOC = require("eleventy-plugin-toc")
 const lucideIcons = require("@grimlink/eleventy-plugin-lucide-icons");
 
+const { buildSiteHeader } = require("./webcomponent-esbuild");
+
 const md = new markdownIt({ html: true });
 
-const websitePath = 'flamels-recipe';
 
 module.exports = function(eleventyConfig) {
+
+  // 使用 eleventy.before 事件钩子，在 11ty 构建开始前执行 esbuild 打包
+  eleventyConfig.on('eleventy.before', buildSiteHeader);
+  // 👇 新增：配置 11ty 开发服务器
+  eleventyConfig.setServerOptions({
+    // 配置中间件
+    middleware: [
+      function(req, res, next) {
+        // 为所有响应添加 CORS 头部
+        res.setHeader('Access-Control-Allow-Origin', '*'); // 或者更安全地设置为 'http://localhost:5173'
+        next();
+      }
+    ]
+  });
+
+
   eleventyConfig.addPassthroughCopy({
      "src/media": "/media",
      "src/assets": "/",
@@ -113,7 +130,6 @@ module.exports = function(eleventyConfig) {
       return b.date - a.date;
     });
   });
-  
   return {
     dir: {
       input: "src",

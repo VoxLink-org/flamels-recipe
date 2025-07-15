@@ -1,16 +1,4 @@
-<header class="border-b flex items-center gap-x-4 py-2 px-4 lg:py-3 lg:px-6 mx-auto sticky top-0 w-full bg-background z-50">
-  <a class="inline-flex items-center" href="{{ site.path }}">
-    <img class="max-sm:h-4 max-sm:w-4 h-5 w-5" src="{{ site.path }}/favicon-32x32.png" />
-    <span class="hidden sm:inline-block ml-2 text-sm font-semibold">Flamel's recipe</span>
-  </a>
-  <a class="ml-auto text-sm font-medium text-muted-foreground hover:text-primary {{ '!text-primary font-medium' if page.url == '/' }}" href="{{ site.path }}/docs/about/">
-    About
-  </a>
-  <a class="text-sm font-medium text-muted-foreground hover:text-primary {{ '!text-primary' if '/docs' in page.url }}" href="{{ site.path }}/docs">
-    Blogs
-  </a>
-  <a class="flex gap-x-1 items-center text-sm font-medium text-muted-foreground hover:text-primary" href="https://t.me/finance_tools_mcp" target="_blank">
-    Telegram
-    {% lucide "arrow-up-right", { "class" : "h-3 w-3" } %}
-  </a>
-</header>
+<site-header
+  sitepath="{{ site.path }}"
+  pageurl="{{ page.url }}"
+></site-header>

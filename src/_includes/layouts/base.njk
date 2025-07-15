@@ -35,5 +35,6 @@
 <body class="bg-background antialiased font-inter">
   {% include "partials/header.njk" %}
   {{ content | safe }}
+  <script src="{{ site.path }}/js/site-header.js" type="module" defer></script>
 </body>
 </html>
