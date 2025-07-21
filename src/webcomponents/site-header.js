@@ -32,7 +32,7 @@ class SiteHeader extends LitElement {
     // 准备用于条件判断的 class
     const aboutClasses = {
       'text-sm': true, 'font-medium': true, 'text-muted-foreground': true, 'hover:text-primary': true,
-      '!text-primary': this.pageUrl === '/docs/about/', // NJK: if page.url == '/docs/about/'
+      '!text-primary': location.hostname === 'chat.findata-be.uk', // NJK: if page.url == '/docs/about/'
     };
     const blogsClasses = {
       'text-sm': true, 'font-medium': true, 'text-muted-foreground': true, 'hover:text-primary': true,
@@ -45,8 +45,8 @@ class SiteHeader extends LitElement {
           <img class="max-sm:h-4 max-sm:w-4 h-5 w-5" src="${this.sitePath}/favicon-32x32.png" />
           <span class="hidden sm:inline-block ml-2 text-sm font-semibold">Flamel's recipe</span>
         </a>
-        <a class="ml-auto ${classMap(aboutClasses)}" href="${this.sitePath}/docs/about/">
-          About
+        <a class="ml-auto ${classMap(aboutClasses)}" href="https://chat.findata-be.uk">
+          Chat
         </a>
         <a class="${classMap(blogsClasses)}" href="${this.sitePath}/docs">
           Blogs

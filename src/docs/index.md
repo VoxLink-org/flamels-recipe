@@ -8,7 +8,7 @@ A LLM Power financial deep research agent
 
 find me on [https://t.me/finance_tools_mcp](https://t.me/finance_tools_mcp)
 
-## 往期报告
+## Reports
 
 {% include "partials/docs/cate.njk" %}
 

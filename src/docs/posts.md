@@ -3,7 +3,7 @@ title: Deep Researches
 order: 2
 ---
 
-## 往期报告
+## Reports
 
 {% include "partials/docs/cate.njk" %}
 
