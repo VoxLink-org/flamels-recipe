@@ -6,9 +6,8 @@ description: "While the stock trades at a significant valuation premium to its
   legacy peers and faces macroeconomic headwinds in its core markets, we believe
   its superior growth trajectory, fortress-like balance sheet, and expanding
   product ecosystem justify this premium. "
-order: 8
+order: 9
 ---
-
 **Date:** 2025-07-09
 **Subject:** **Final Recommendation on Nu Holdings Ltd. (NYSE: NU)**
 
