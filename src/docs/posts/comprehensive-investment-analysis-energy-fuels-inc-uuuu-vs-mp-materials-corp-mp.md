@@ -6,7 +6,7 @@ date: 2025-07-21
 description: "For investors with a **high-risk tolerance and a long-term horizon
   (3-5 years)**, **Energy Fuels Inc. (UUUU) presents a more compelling, albeit
   speculative, opportunity.** "
-order: 9
+order: 10
 ---
 **Date:** July 21, 2025
 
