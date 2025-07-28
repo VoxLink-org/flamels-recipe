@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  x-data="{
+    darkMode: localStorage.getItem('dark') ? localStorage.getItem('dark') === 'true' : window.matchMedia('(prefers-color-scheme: dark)').matches
+  }"
+  x-init="$watch('darkMode', val => localStorage.setItem('dark', val))"
+  x-bind:class="{ 'dark': darkMode }">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Recommendation on Building a Position in LVMH (LVMUY) - Flamel&#39;s recipe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="The investment thesis is predicated on the opportunity to acquire the undisputed leader in the luxury goods sector at a valuation below its historical average. The stock has been penalized by cyclical headwinds, particularly a slowdown in China and post-pandemic demand normalization. However, we believe these challenges are temporary"/>
+  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1753717874530"/>
+  <link rel="icon" type="image/x-icon" href="/flamels-recipe/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/flamels-recipe/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/flamels-recipe/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/flamels-recipe/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/flamels-recipe/favicon.svg">
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Recommendation on Building a Position in LVMH (LVMUY) - Flamel&#39;s recipe"/>
+  <meta property="og:description" content="The investment thesis is predicated on the opportunity to acquire the undisputed leader in the luxury goods sector at a valuation below its historical average. The stock has been penalized by cyclical headwinds, particularly a slowdown in China and post-pandemic demand normalization. However, we believe these challenges are temporary"/>
+  <meta property="og:url" content="/flamels-recipe/docs/posts/recommendation-on-building-a-position-in-lvmh-lvmuy/"/>
+  <meta property="og:image" content="/flamels-recipe/cover@2x.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@pagescms"/>
+  <meta name="twitter:url" content="/flamels-recipe/docs/posts/recommendation-on-building-a-position-in-lvmh-lvmuy/"/>
+  <meta name="twitter:title" content="Recommendation on Building a Position in LVMH (LVMUY) - Flamel&#39;s recipe"/>
+  <meta name="twitter:description" content="The investment thesis is predicated on the opportunity to acquire the undisputed leader in the luxury goods sector at a valuation below its historical average. The stock has been penalized by cyclical headwinds, particularly a slowdown in China and post-pandemic demand normalization. However, we believe these challenges are temporary"/>
+  <meta name="twitter:image" content="/flamels-recipe/cover@2x.png"/>
+  <script src="/flamels-recipe/js/alpine.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6CD3GQF0RC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6CD3GQF0RC');
+</script>
+
+</head>
+<body class="bg-background antialiased font-inter">
+  <site-header
+  sitepath="/flamels-recipe"
+  pageurl="/docs/posts/recommendation-on-building-a-position-in-lvmh-lvmuy/"
+></site-header>
+
+  <div class="flex max-md:flex-col max-w-7xl mx-auto px-4 my-8 lg:px-8 lg:my-12 gap-x-8">
+  <div class="md:w-80 max-md:mb-4">
+    <div class="navigation md:pr-8 md:border-r" x-data="{ showNav: false }">
+      <button @click="showNav = !showNav" class="button-outline flex items-center gap-x-2 w-full md:hidden mb-2">
+        <span x-text="showNav ? 'Hide navigation' : 'Show navigation'"></span>
+        <template x-if="!showNav"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="m7 15 5 5 5-5" /><path d="m7 9 5-5 5 5" /></svg></template>
+        <template x-if="showNav"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="m7 20 5-5 5 5" /><path d="m7 4 5 5 5-5" /></svg></template>
+      </button>
+      <div class="max-md:max-h-0 overflow-hidden duration-200 transition-all" :style="showNav ? 'max-height: ' + $refs.navigation.offsetHeight + 'px' : ''">
+        <div x-ref="navigation" class="max-md:border max-md:rounded-md max-md:p-4 max-md:text-sm">
+          
+
+
+  <ul class="flex flex-col gap-y-4">
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Flamel&#39;s recipe
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Deep Researches
+          </a>
+          
+            <button class="ml-auto text-muted-foreground hover:text-inherit transition-all duration-200" @click="open = !open" :class="open ? 'rotate-90' : ''">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m9 18 6-6-6-6" /></svg>
+            </button>
+          
+        </div>
+                    
+          <div class="max-h-0 overflow-hidden duration-200 transition-all" :style="open ? 'max-height: ' + $el.scrollHeight + 'px' : ''" style="max-height: 100%;">
+            
+              
+  <ul class="flex flex-col gap-y-4">
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/2025-07-06-oscar-health-inc-nyse-oscr/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            奥斯卡健康 (Oscar Health, Inc. - NYSE: OSCR) 投资研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/2025-07-05-oracle/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            甲骨文公司（Oracle）深度研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/hims-and-hers-health-inc-nyse-hims/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Hims &amp; Hers Health, Inc. (NYSE: HIMS) 投资研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/comprehensive-investment-research-report-on-palantir-technologies-inc-nyse-pltr/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Comprehensive Investment Research Report on Palantir Technologies Inc. (NYSE: PLTR)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/carvana-co-nyse-cvna/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            投资研究报告：Carvana Co. (NYSE: CVNA)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/futu-holdings-limited-nasdaq-futu-comprehensive-analysis-and-recommendation/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Futu Holdings Limited (NASDAQ: FUTU) - Comprehensive Analysis and Recommendation
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/alphabet-inc-googl/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            谷歌 (Alphabet Inc., GOOGL) 深度投资研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/comprehensive-analysis-and-recommendation-for-intuitive-machines-inc-lunr/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Comprehensive Analysis and Recommendation for Intuitive Machines, Inc. (LUNR)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/comprehensive-analysis-of-nu-holdings-ltd-nu/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Comprehensive analysis of Nu Holdings Ltd. (&quot;Nu&quot;).
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/comprehensive-investment-analysis-energy-fuels-inc-uuuu-vs-mp-materials-corp-mp/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Comprehensive Investment Analysis: Energy Fuels Inc. (UUUU) vs. MP Materials Corp. (MP)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/comprehensive-analysis-and-recommendation-for-asp-isotopes-inc-aspi/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Comprehensive Analysis and Recommendation for ASP Isotopes Inc. (ASPI)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/comprehensive-analysis-and-recommendation-for-advanced-micro-devices-inc-amd/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Comprehensive Analysis and Recommendation for Advanced Micro Devices, Inc. (AMD)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/is-now-a-compelling-time-to-invest-in-nio/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Is now a compelling time to invest in NIO?
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/recommendation-on-building-a-position-in-lvmh-lvmuy/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none text-primary font-medium">
+            Recommendation on Building a Position in LVMH (LVMUY)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+  </ul>
+
+            
+          </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/demo/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Demo
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/about/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            About
+          </a>
+          
+        </div>
+        
+      </li>
+    
+  </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w-full">
+    <div class="prose">
+      <h1 class="!mb-8">Recommendation on Building a Position in LVMH (LVMUY)</h1>
+      <h2 id="date%3A-july-28%2C-2025"><strong>Date:</strong> July 28, 2025</h2>
+<h3 id="1.-executive-summary-%26-recommendation"><strong>1. Executive Summary &amp; Recommendation</strong></h3>
+<p>This report provides a comprehensive analysis of LVMH Moët Hennessy Louis Vuitton SE (OTC: LVMUY) to determine if the current market conditions present a favorable opportunity to initiate a position.</p>
+<p>After synthesizing macroeconomic data, sector trends, company financials, and recent performance, our recommendation is a <strong>BUY</strong> for investors with a long-term horizon (2-3 years).</p>
+<p>The investment thesis is predicated on the opportunity to acquire the undisputed leader in the luxury goods sector at a valuation below its historical average. The stock has been penalized by cyclical headwinds, particularly a slowdown in China and post-pandemic demand normalization. However, we believe these challenges are temporary. Powerful bullish signals, including <strong>significant insider buying by the CEO</strong>, tangible brand-level catalysts like the <strong>Louis Vuitton x Murakami collection relaunch</strong>, and a <strong>compelling forward P/E ratio relative to peers</strong>, suggest that the current price represents an attractive entry point for patient capital.</p>
+<p><strong>Price Target:</strong> $144.00 (Analyst Consensus)
+<strong>Current Price (as of 7/28/2025):</strong> $114.01
+<strong>Implied Upside:</strong> 26.3%</p>
+<hr>
+<h3 id="2.-company-overview"><strong>2. Company Overview</strong></h3>
+<p>LVMH is a French multinational conglomerate and the world's largest luxury goods company. Headquartered in Paris, it operates a diversified portfolio of 75 prestigious brands, or &quot;Maisons,&quot; across six sectors:</p>
+<ul>
+<li><strong>Fashion &amp; Leather Goods:</strong> Louis Vuitton, Christian Dior, Fendi, Loro Piana.</li>
+<li><strong>Wines &amp; Spirits:</strong> Moët &amp; Chandon, Hennessy, Dom Pérignon, Veuve Clicquot.</li>
+<li><strong>Perfumes &amp; Cosmetics:</strong> Parfums Christian Dior, Guerlain, Fenty Beauty by Rihanna.</li>
+<li><strong>Watches &amp; Jewelry:</strong> Tiffany &amp; Co., Bulgari, TAG Heuer, Hublot.</li>
+<li><strong>Selective Retailing:</strong> Sephora, DFS.</li>
+<li><strong>Other Activities:</strong> Hospitality (Belmond), Media.</li>
+</ul>
+<p>With a market capitalization of approximately $283 billion, LVMH's scale, diversification, and brand equity provide a formidable competitive moat.</p>
+<hr>
+<h3 id="3.-investment-thesis-%26-catalysts-(bull-case)"><strong>3. Investment Thesis &amp; Catalysts (Bull Case)</strong></h3>
+<p><strong>A. Premier Asset at a Cyclical Discount:</strong> LVMH is a best-in-class operator facing temporary, cyclical pressures, not structural decline. The 2024 revenue dip (-2%) and continued weakness in H1 2025 (revenue down 3%) are primarily driven by post-COVID demand normalization in Wines &amp; Spirits and a broad luxury slowdown in China. This has caused the stock to underperform, with a max drawdown of 41.5% over the past year. This period of weakness allows investors to purchase an industry leader at a valuation below its long-term average. The current trailing P/E of 22.0x and forward P/E of 17.2x are notably below its 10-year historical average P/E of 27.4x.</p>
+<p><strong>B. Unprecedented Insider Confidence:</strong> In the last 90 days, CEO Bernard Arnault has made 14 purchases totaling approximately <strong>€193.4 million</strong>. This is an exceptionally strong vote of confidence from the company's visionary leader. Such significant insider buying, especially during a period of stock price weakness, signals a deep belief in the company's long-term strategy and intrinsic value, aligning management's interests directly with shareholders.</p>
+<p><strong>C. Tangible Brand-Level Turnaround Catalysts:</strong> LVMH is not passively waiting for the market to recover. The highly anticipated 2025 re-edition of the <strong>Louis Vuitton x Takashi Murakami collection</strong> has launched to significant hype and strong early demand. This demonstrates the company's ability to leverage its iconic intellectual property to reignite consumer excitement and drive sales, providing a tangible catalyst for the crucial Fashion &amp; Leather Goods division. Furthermore, the Selective Retailing division, led by Sephora, has shown resilience with 4% growth in Q2 2025, providing a stabilizing counterbalance to weakness elsewhere.</p>
+<p><strong>D. Favorable Forward-Looking Valuation vs. Peers:</strong> While LVMH's current trailing P/E (22.0x) is in line with peers Richemont (22.9x) and Kering (23.0x), its <strong>forward P/E of 17.2x</strong> is significantly more attractive than Richemont's (22.9x) and Kering's (24.1x). This suggests that the market is pricing in a recovery for LVMH that is not yet fully reflected in its stock price, offering superior value on a forward-looking basis.</p>
+<hr>
+<h3 id="4.-valuation-analysis"><strong>4. Valuation Analysis</strong></h3>
+<p>LVMH's valuation presents a mixed but ultimately compelling picture. The corrected Price-to-Book ratio of 4.09 is not indicative of a deep value stock, but rather reflects the high-quality, brand-intensive nature of the business. The key opportunity lies in its earnings multiple relative to its own history and future growth prospects.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Metric</th>
+<th style="text-align:left">LVMUY (LVMH)</th>
+<th style="text-align:left">CFRUY (Richemont)</th>
+<th style="text-align:left">PPRUY (Kering)</th>
+<th style="text-align:left">Analysis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Market Cap</strong></td>
+<td style="text-align:left">$283.2B</td>
+<td style="text-align:left">$101.0B</td>
+<td style="text-align:left">$30.8B</td>
+<td style="text-align:left">LVMH is the undisputed market leader by size.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Trailing P/E</strong></td>
+<td style="text-align:left">22.0x</td>
+<td style="text-align:left">22.9x</td>
+<td style="text-align:left">23.0x</td>
+<td style="text-align:left">In-line with peers, but below its own historical average.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Forward P/E</strong></td>
+<td style="text-align:left"><strong>17.2x</strong></td>
+<td style="text-align:left">22.9x</td>
+<td style="text-align:left">24.1x</td>
+<td style="text-align:left"><strong>Significantly cheaper than peers on a forward basis.</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Dividend Yield</strong></td>
+<td style="text-align:left">2.46%</td>
+<td style="text-align:left">1.84%</td>
+<td style="text-align:left">2.52%</td>
+<td style="text-align:left">Offers a solid and competitive dividend yield.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Price/Book</strong></td>
+<td style="text-align:left">4.09x</td>
+<td style="text-align:left">0.46x</td>
+<td style="text-align:left">N/A</td>
+<td style="text-align:left">P/B is elevated, reflecting brand equity.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>PEG Ratio</strong></td>
+<td style="text-align:left">3.27</td>
+<td style="text-align:left">2.77</td>
+<td style="text-align:left">N/A</td>
+<td style="text-align:left">High PEG suggests growth may not fully justify current price.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Analyst Rating</strong></td>
+<td style="text-align:left"><strong>Strong Buy</strong></td>
+<td style="text-align:left">Buy</td>
+<td style="text-align:left">Hold</td>
+<td style="text-align:left">Strongest analyst conviction among peers.</td>
+</tr>
+</tbody>
+</table>
+<p>Analyst consensus forecasts point to a recovery, with EPS projected to grow <strong>11.85%</strong> from 2025 (€21.78) to 2026 (€24.36). While the PEG ratio appears high, the combination of a low forward P/E and strong insider buying suggests the market may be underestimating the pace or magnitude of the eventual recovery.</p>
+<hr>
+<h3 id="5.-key-risks-%26-mitigants-(bear-case)"><strong>5. Key Risks &amp; Mitigants (Bear Case)</strong></h3>
+<p><strong>A. Prolonged Slowdown in China:</strong> The Chinese luxury market, which declined 18-20% in 2024, is forecasted to be flat in 2025 with a challenging first half. LVMH's Q2 2025 results confirmed this weakness, with sales in Japan (heavily reliant on Chinese tourists) down 28%. A slower-than-expected recovery in this key region poses the most significant risk to revenue and earnings forecasts.</p>
+<ul>
+<li><strong>Mitigant:</strong> LVMH's geographic diversification and management's focus on combating grey market activities (Daigou) aim to stabilize the region. The company has successfully navigated numerous economic cycles in the past.</li>
+</ul>
+<p><strong>B. Continued Operational Weakness &amp; Value Trap Risk:</strong> Recent results are poor. H1 2025 profit fell 15%, and Q2 2025 Fashion &amp; Leather sales declined 9%. The risk is that the stock is a &quot;value trap&quot;—appearing cheap on historical metrics, but earnings continue to fall, making it more expensive in reality.</p>
+<ul>
+<li><strong>Mitigant:</strong> The strong reception of the Murakami collection provides early evidence that brand-level initiatives can reignite momentum. The massive insider buying by the CEO suggests that management sees fundamental value, not a trap.</li>
+</ul>
+<p><strong>C. Macroeconomic Sensitivity:</strong> The broader market environment, while currently optimistic (Greed Index: 74), faces risks from stable but high interest rates (Fed Rate: 4.50%). LVMH's exposure to aspirational luxury consumers makes it more vulnerable to a global economic downturn than ultra-high-end peers like Hermès.</p>
+<ul>
+<li><strong>Mitigant:</strong> The company's diverse portfolio, spanning multiple price points and categories (e.g., the resilience of Sephora), provides a buffer against downturns in any single segment.</li>
+</ul>
+<hr>
+<h3 id="6.-conclusion"><strong>6. Conclusion</strong></h3>
+<p>The decision to invest in LVMUY today is a vote of confidence in quality and long-term resilience over short-term sentiment. The company is facing undeniable headwinds that have been clearly reflected in its recent financial results and stock performance.</p>
+<p>However, the confluence of a valuation below its historical average, a forward P/E that is highly attractive versus peers, tangible catalysts for a brand turnaround, and one of the strongest insider buying signals in the market creates a compelling, asymmetric risk/reward profile.</p>
+<p>We recommend <strong>initiating a BUY position in LVMUY</strong> for long-term portfolios, with the expectation of near-term volatility as the luxury market navigates its cyclical trough. The analyst consensus price target of $144.00 represents a significant upside and a return to a valuation more in line with the company's premier status.</p>
+
+    </div>
+    
+  
+  
+  
+  
+    <footer class="flex gap-x-4 mt-8 pt-4 border-t">
+      
+        <a href="/flamels-recipe/docs/posts/is-now-a-compelling-time-to-invest-in-nio/" class="button-outline flex items-center gap-x-2 truncate">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m15 18-6-6 6-6" /></svg>
+          <span class="max-w-1/2 truncate">Is now a compelling time to invest in NIO?</span>
+        </a>
+      
+      
+        <a href="/flamels-recipe/docs/demo/" class="button-outline flex items-center gap-x-2 ml-auto truncate">
+          <span class="max-w-1/2 truncate">Demo</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m9 18 6-6-6-6" /></svg>
+        </a>
+      
+      </footer>
+  
+
+  </div>
+  
+  <div class="w-64 max-lg:hidden">
+    <div class="sticky top-16 text-sm">
+      <h2 class="font-semibold track-tight">On this page</h2>
+      <nav class="toc" >
+        <ol><li><a href="#date%3A-july-28%2C-2025">Date: July 28, 2025</a><ol><li><a href="#1.-executive-summary-%26-recommendation">1. Executive Summary &amp; Recommendation</a></li><li><a href="#2.-company-overview">2. Company Overview</a></li><li><a href="#3.-investment-thesis-%26-catalysts-(bull-case)">3. Investment Thesis &amp; Catalysts (Bull Case)</a></li><li><a href="#4.-valuation-analysis">4. Valuation Analysis</a></li><li><a href="#5.-key-risks-%26-mitigants-(bear-case)">5. Key Risks &amp; Mitigants (Bear Case)</a></li><li><a href="#6.-conclusion">6. Conclusion</a></li></ol></li></ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<link x-bind:href="darkMode ? 'https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css' : 'https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github.min.css'" rel="stylesheet">
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/yaml.min.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function() { hljs.highlightAll(); });</script>
+  <script src="/flamels-recipe/js/site-header.js" type="module" defer></script>
+</body>
+</html>
