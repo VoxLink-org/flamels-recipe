@@ -36,7 +36,24 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(lucideIcons);
 
-  eleventyConfig.setLibrary("md", markdownIt({ html: true }).use(markdownItAnchor, { tabIndex: false }));
+  const md = markdownIt({ html: true }).use(markdownItAnchor, { tabIndex: false });
+  
+  // Custom renderer for chart code blocks
+  md.renderer.rules.fence = (tokens, idx, options, env, self) => {
+    const token = tokens[idx];
+    if (token.info.trim() === 'chart') {
+      return `
+        <div class="w-full min-w-[400px] overflow-auto">
+          <div class="mx-auto my-4 flex max-h-[300px] w-full items-center justify-center">
+            <canvas data-chart-config="${encodeURIComponent(token.content)}"></canvas>
+          </div>
+        </div>
+      `;
+    }
+    return self.renderToken(tokens, idx, options);
+  };
+  
+  eleventyConfig.setLibrary("md", md);
 
   eleventyConfig.addFilter("markdown", (content) => {
     return md.render(content);
