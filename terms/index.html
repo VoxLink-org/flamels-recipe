@@ -11,7 +11,7 @@
   <title>Terms and Conditions - Flamel&#39;s recipe</title>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="description" content="The LLM-powered financial deep research agent."/>
-  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1753890702376"/>
+  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1754107050353"/>
   <link rel="icon" type="image/x-icon" href="/flamels-recipe/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/flamels-recipe/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/flamels-recipe/favicon-16x16.png">
@@ -132,5 +132,19 @@
   </div>
 </div>
   <script src="/flamels-recipe/js/site-header.js" type="module" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('canvas[data-chart-config]').forEach(canvas => {
+        try {
+          const config = eval(`(${decodeURIComponent(canvas.dataset.chartConfig)})`);
+          const ctx = canvas.getContext('2d');
+          new Chart(ctx, config);
+        } catch (err) {
+          console.warn('Failed to render chart:', err);
+        }
+      });
+    });
+  </script>
 </body>
 </html>

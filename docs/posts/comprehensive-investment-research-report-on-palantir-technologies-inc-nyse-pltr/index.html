@@ -11,7 +11,7 @@
   <title>Comprehensive Investment Research Report on Palantir Technologies Inc. (NYSE: PLTR) - Flamel&#39;s recipe</title>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="description" content="This valuation leaves no room for execution error and exposes investors to significant downside risk"/>
-  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1753890702375"/>
+  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1754107050352"/>
   <link rel="icon" type="image/x-icon" href="/flamels-recipe/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/flamels-recipe/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/flamels-recipe/favicon-16x16.png">
@@ -229,6 +229,16 @@
         
       </li>
     
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/unitedhealth-group-unh-is-currently-at-a-critical-inflection-point/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            UnitedHealth Group (UNH) is currently at a critical inflection point
+          </a>
+          
+        </div>
+        
+      </li>
+    
   </ul>
 
             
@@ -394,5 +404,19 @@ This premium valuation implies flawless execution for years to come and makes th
 <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/yaml.min.js"></script>
 <script>document.addEventListener('DOMContentLoaded', function() { hljs.highlightAll(); });</script>
   <script src="/flamels-recipe/js/site-header.js" type="module" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('canvas[data-chart-config]').forEach(canvas => {
+        try {
+          const config = eval(`(${decodeURIComponent(canvas.dataset.chartConfig)})`);
+          const ctx = canvas.getContext('2d');
+          new Chart(ctx, config);
+        } catch (err) {
+          console.warn('Failed to render chart:', err);
+        }
+      });
+    });
+  </script>
 </body>
 </html>

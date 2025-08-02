@@ -11,7 +11,7 @@
   <title>Comprehensive analysis of Nu Holdings Ltd. (&quot;Nu&quot;). - Flamel&#39;s recipe</title>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="description" content="While the stock trades at a significant valuation premium to its legacy peers and faces macroeconomic headwinds in its core markets, we believe its superior growth trajectory, fortress-like balance sheet, and expanding product ecosystem justify this premium. "/>
-  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1753890702374"/>
+  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1754107050352"/>
   <link rel="icon" type="image/x-icon" href="/flamels-recipe/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/flamels-recipe/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/flamels-recipe/favicon-16x16.png">
@@ -229,6 +229,16 @@
         
       </li>
     
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/unitedhealth-group-unh-is-currently-at-a-critical-inflection-point/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            UnitedHealth Group (UNH) is currently at a critical inflection point
+          </a>
+          
+        </div>
+        
+      </li>
+    
   </ul>
 
             
@@ -407,5 +417,19 @@ Nu's financial health is robust. As of Q1 2025, the company held <strong>$14.9 b
 <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/yaml.min.js"></script>
 <script>document.addEventListener('DOMContentLoaded', function() { hljs.highlightAll(); });</script>
   <script src="/flamels-recipe/js/site-header.js" type="module" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('canvas[data-chart-config]').forEach(canvas => {
+        try {
+          const config = eval(`(${decodeURIComponent(canvas.dataset.chartConfig)})`);
+          const ctx = canvas.getContext('2d');
+          new Chart(ctx, config);
+        } catch (err) {
+          console.warn('Failed to render chart:', err);
+        }
+      });
+    });
+  </script>
 </body>
 </html>

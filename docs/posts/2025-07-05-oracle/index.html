@@ -11,7 +11,7 @@
   <title>甲骨文公司（Oracle）深度研究报告 - Flamel&#39;s recipe</title>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="description" content="甲骨文正处在一个历史性的转型拐点。其云基础设施业务（OCI），尤其在人工智能（AI）计算领域，正展现出爆发式增长潜力。近期与OpenAI签订的价值数十亿美元的“星际之门”（Stargate）数据中心协议，不仅是对其技术实力的权威背书，更标志着公司已成功切入AI时代最核心的价值链。"/>
-  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1753890702374"/>
+  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1754107050352"/>
   <link rel="icon" type="image/x-icon" href="/flamels-recipe/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/flamels-recipe/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/flamels-recipe/favicon-16x16.png">
@@ -229,6 +229,16 @@
         
       </li>
     
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/unitedhealth-group-unh-is-currently-at-a-critical-inflection-point/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            UnitedHealth Group (UNH) is currently at a critical inflection point
+          </a>
+          
+        </div>
+        
+      </li>
+    
   </ul>
 
             
@@ -417,5 +427,19 @@
 <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/yaml.min.js"></script>
 <script>document.addEventListener('DOMContentLoaded', function() { hljs.highlightAll(); });</script>
   <script src="/flamels-recipe/js/site-header.js" type="module" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('canvas[data-chart-config]').forEach(canvas => {
+        try {
+          const config = eval(`(${decodeURIComponent(canvas.dataset.chartConfig)})`);
+          const ctx = canvas.getContext('2d');
+          new Chart(ctx, config);
+        } catch (err) {
+          console.warn('Failed to render chart:', err);
+        }
+      });
+    });
+  </script>
 </body>
 </html>
