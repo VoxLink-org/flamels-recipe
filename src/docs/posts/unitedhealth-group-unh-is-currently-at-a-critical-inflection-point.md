@@ -7,10 +7,7 @@ description: We believe the current share price offers a compelling entry point
   with a **Speculative Buy** rating and a 12-month price target of **$335.00**
 order: 15
 ---
- # **UnitedHealth Group (UNH) - Investment Research Report**
-
 **Date:** August 2, 2025
-**Author:** Senior Investment Analyst
 **Recommendation:** Speculative Buy
 **Price Target (12-Month):** $335.00
 **Current Price (as of Aug 1, 2025):** $237.77
