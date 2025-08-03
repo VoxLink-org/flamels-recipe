@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  x-data="{
+    darkMode: localStorage.getItem('dark') ? localStorage.getItem('dark') === 'true' : window.matchMedia('(prefers-color-scheme: dark)').matches
+  }"
+  x-init="$watch('darkMode', val => localStorage.setItem('dark', val))"
+  x-bind:class="{ 'dark': darkMode }">
+<head>
+  <meta charset="UTF-8"/>
+  <title>**Special Report**: Quantifying the Impact of China&#39;s Tax Crackdown on Futu&#39;s Quarterly Revenue - Flamel&#39;s recipe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="This report analyzes the impact of a hypothetical, intensified tax investigation by Chinese authorities targeting Futu&#39;s remaining mainland Chinese users, beginning in May 2025. Our key judgment is that **the impact on Futu&#39;s total quarterly revenue is minimal, estimated to be a reduction of between 1.1% and 3.5%.**"/>
+  <link rel="stylesheet" type="text/css" href="/flamels-recipe/styles.css?build=1754205679688"/>
+  <link rel="icon" type="image/x-icon" href="/flamels-recipe/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/flamels-recipe/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/flamels-recipe/favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/flamels-recipe/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/flamels-recipe/favicon.svg">
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="**Special Report**: Quantifying the Impact of China&#39;s Tax Crackdown on Futu&#39;s Quarterly Revenue - Flamel&#39;s recipe"/>
+  <meta property="og:description" content="This report analyzes the impact of a hypothetical, intensified tax investigation by Chinese authorities targeting Futu&#39;s remaining mainland Chinese users, beginning in May 2025. Our key judgment is that **the impact on Futu&#39;s total quarterly revenue is minimal, estimated to be a reduction of between 1.1% and 3.5%.**"/>
+  <meta property="og:url" content="/flamels-recipe/docs/posts/special-report-quantifying-the-impact-of-chinas-tax-crackdown-on-futus-quarterly-revenue/"/>
+  <meta property="og:image" content="/flamels-recipe/cover@2x.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@pagescms"/>
+  <meta name="twitter:url" content="/flamels-recipe/docs/posts/special-report-quantifying-the-impact-of-chinas-tax-crackdown-on-futus-quarterly-revenue/"/>
+  <meta name="twitter:title" content="**Special Report**: Quantifying the Impact of China&#39;s Tax Crackdown on Futu&#39;s Quarterly Revenue - Flamel&#39;s recipe"/>
+  <meta name="twitter:description" content="This report analyzes the impact of a hypothetical, intensified tax investigation by Chinese authorities targeting Futu&#39;s remaining mainland Chinese users, beginning in May 2025. Our key judgment is that **the impact on Futu&#39;s total quarterly revenue is minimal, estimated to be a reduction of between 1.1% and 3.5%.**"/>
+  <meta name="twitter:image" content="/flamels-recipe/cover@2x.png"/>
+  <script src="/flamels-recipe/js/alpine.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6CD3GQF0RC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6CD3GQF0RC');
+</script>
+
+</head>
+<body class="bg-background antialiased font-inter">
+  <site-header
+  sitepath="/flamels-recipe"
+  pageurl="/docs/posts/special-report-quantifying-the-impact-of-chinas-tax-crackdown-on-futus-quarterly-revenue/"
+></site-header>
+
+  <div class="flex max-md:flex-col max-w-7xl mx-auto px-4 my-8 lg:px-8 lg:my-12 gap-x-8">
+  <div class="md:w-80 max-md:mb-4">
+    <div class="navigation md:pr-8 md:border-r" x-data="{ showNav: false }">
+      <button @click="showNav = !showNav" class="button-outline flex items-center gap-x-2 w-full md:hidden mb-2">
+        <span x-text="showNav ? 'Hide navigation' : 'Show navigation'"></span>
+        <template x-if="!showNav"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="m7 15 5 5 5-5" /><path d="m7 9 5-5 5 5" /></svg></template>
+        <template x-if="showNav"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="m7 20 5-5 5 5" /><path d="m7 4 5 5 5-5" /></svg></template>
+      </button>
+      <div class="max-md:max-h-0 overflow-hidden duration-200 transition-all" :style="showNav ? 'max-height: ' + $refs.navigation.offsetHeight + 'px' : ''">
+        <div x-ref="navigation" class="max-md:border max-md:rounded-md max-md:p-4 max-md:text-sm">
+          
+
+
+  <ul class="flex flex-col gap-y-4">
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Flamel&#39;s recipe
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Deep Researches
+          </a>
+          
+            <button class="ml-auto text-muted-foreground hover:text-inherit transition-all duration-200" @click="open = !open" :class="open ? 'rotate-90' : ''">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m9 18 6-6-6-6" /></svg>
+            </button>
+          
+        </div>
+                    
+          <div class="max-h-0 overflow-hidden duration-200 transition-all" :style="open ? 'max-height: ' + $el.scrollHeight + 'px' : ''" style="max-height: 100%;">
+            
+              
+  <ul class="flex flex-col gap-y-4">
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/2025-07-06-oscar-health-inc-nyse-oscr/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            奥斯卡健康 (Oscar Health, Inc. - NYSE: OSCR) 投资研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/2025-07-05-oracle/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            甲骨文公司（Oracle）深度研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/hims-and-hers-health-inc-nyse-hims/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Hims &amp; Hers Health, Inc. (NYSE: HIMS) 投资研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/comprehensive-investment-research-report-on-palantir-technologies-inc-nyse-pltr/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Comprehensive Investment Research Report on Palantir Technologies Inc. (NYSE: PLTR)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/carvana-co-nyse-cvna/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            投资研究报告：Carvana Co. (NYSE: CVNA)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/futu-holdings-limited-nasdaq-futu-comprehensive-analysis-and-recommendation/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Futu Holdings Limited (NASDAQ: FUTU) - Comprehensive Analysis and Recommendation
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/alphabet-inc-googl/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            谷歌 (Alphabet Inc., GOOGL) 深度投资研究报告
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/comprehensive-analysis-and-recommendation-for-intuitive-machines-inc-lunr/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Comprehensive Analysis and Recommendation for Intuitive Machines, Inc. (LUNR)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/comprehensive-analysis-of-nu-holdings-ltd-nu/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Comprehensive analysis of Nu Holdings Ltd. (&quot;Nu&quot;).
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/comprehensive-investment-analysis-energy-fuels-inc-uuuu-vs-mp-materials-corp-mp/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Comprehensive Investment Analysis: Energy Fuels Inc. (UUUU) vs. MP Materials Corp. (MP)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/comprehensive-analysis-and-recommendation-for-asp-isotopes-inc-aspi/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Comprehensive Analysis and Recommendation for ASP Isotopes Inc. (ASPI)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/comprehensive-analysis-and-recommendation-for-advanced-micro-devices-inc-amd/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Comprehensive Analysis and Recommendation for Advanced Micro Devices, Inc. (AMD)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/is-now-a-compelling-time-to-invest-in-nio/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Is now a compelling time to invest in NIO?
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/recommendation-on-building-a-position-in-lvmh-lvmuy/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Recommendation on Building a Position in LVMH (LVMUY)
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/unitedhealth-group-unh-is-currently-at-a-critical-inflection-point/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            UnitedHealth Group (UNH) is currently at a critical inflection point
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: true }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/posts/special-report-quantifying-the-impact-of-chinas-tax-crackdown-on-futus-quarterly-revenue/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none text-primary font-medium">
+            **Special Report**: Quantifying the Impact of China&#39;s Tax Crackdown on Futu&#39;s Quarterly Revenue
+          </a>
+          
+        </div>
+        
+      </li>
+    
+  </ul>
+
+            
+          </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/demo/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            Demo
+          </a>
+          
+        </div>
+        
+      </li>
+    
+      <li x-data="{ open: false }">
+        <div class="flex gap-x-2 items-center">
+          <a href="/flamels-recipe/docs/about/" class="flex items-center rounded-lg font-mdedium text-sm text-muted-foreground hover:text-primary outline-none">
+            About
+          </a>
+          
+        </div>
+        
+      </li>
+    
+  </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w-full">
+    <div class="prose">
+      <h1 class="!mb-8">**Special Report**: Quantifying the Impact of China&#39;s Tax Crackdown on Futu&#39;s Quarterly Revenue</h1>
+      <p><strong>Date:</strong> August 3, 2025
+<strong>Subject:</strong> Futu Holdings Limited (NASDAQ: FUTU)</p>
+<h3 id="1.-executive-summary-%26-key-judgments"><strong>1. Executive Summary &amp; Key Judgments</strong></h3>
+<p>This report analyzes the impact of a hypothetical, intensified tax investigation by Chinese authorities targeting Futu's remaining mainland Chinese users, beginning in May 2025. Our key judgment is that <strong>the impact on Futu's total quarterly revenue is minimal, estimated to be a reduction of between 1.1% and 3.5%.</strong></p>
+<p>This conclusion is based on three core findings:</p>
+<ol>
+<li><strong>Successful International Pivot:</strong> Futu's aggressive and successful expansion into international markets has made its overall revenue base large and geographically diverse.</li>
+<li><strong>Contained and Depleting Mainland Segment:</strong> The mainland Chinese user base is already a small, declining, and ring-fenced segment due to prior regulations prohibiting new accounts and new fund inflows.</li>
+<li><strong>Strong Financial Health:</strong> Futu's robust balance sheet and consistent growth in international client assets provide a substantial buffer to absorb shocks from this legacy segment.</li>
+</ol>
+<p>The risk associated with the mainland China user base, while a major concern in previous years, has been effectively neutralized as a threat to Futu's overall growth story.</p>
+<h3 id="2.-background%3A-from-mainland-reliance-to-global-powerhouse"><strong>2. Background: From Mainland Reliance to Global Powerhouse</strong></h3>
+<p>Historically, Futu's growth was heavily tied to mainland China. As of early 2022, this segment accounted for an estimated <strong>44% of total revenue</strong>. However, a series of regulatory actions by the China Securities Regulatory Commission (CSRC) fundamentally altered this landscape:</p>
+<ul>
+<li><strong>Dec 2022:</strong> Ban on soliciting new mainland clients.</li>
+<li><strong>May 2023:</strong> Futu's app removed from mainland app stores.</li>
+<li><strong>Official Edict:</strong> Existing mainland clients were permitted to trade but <strong>explicitly forbidden from depositing new funds</strong>, creating a one-way capital street.</li>
+</ul>
+<p>Our analysis now incorporates a new stress test: a tax crackdown beginning in May 2025 that causes <strong>50% of the remaining mainland users to cease activity immediately.</strong></p>
+<h3 id="3.-methodology%3A-modeling-the-quarterly-revenue-shock"><strong>3. Methodology: Modeling the Quarterly Revenue Shock</strong></h3>
+<p>To quantify the impact, we will use the two most credible scenarios developed during our research, which account for both official rules and real-world user behavior.</p>
+<ul>
+<li><strong>Scenario A (Realistic Attrition):</strong> A conservative model assuming high user attrition due to the strict &quot;no new funds&quot; rule.</li>
+<li><strong>Scenario C (&quot;Grey Market Workaround&quot;):</strong> A more generous model assuming a sophisticated minority (30%) of users can still deposit funds via Hong Kong bank accounts, making the user base &quot;stickier.&quot;</li>
+</ul>
+<p><strong>Baseline Projections (Pre-Shock):</strong></p>
+<ul>
+<li><strong>Total Projected 2025 Futu Revenue:</strong> <strong>$2.1 Billion</strong></li>
+<li><strong>Total Projected Quarterly Revenue:</strong> $2.1B / 4 = <strong>$525 Million</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Metric</th>
+<th style="text-align:left">Scenario A (Realistic)</th>
+<th style="text-align:left">Scenario C (Grey Market)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Annual</strong> Mainland Revenue</td>
+<td style="text-align:left">$45.8 Million</td>
+<td style="text-align:left">$146.1 Million</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Quarterly</strong> Mainland Revenue</td>
+<td style="text-align:left"><strong>$11.45 Million</strong></td>
+<td style="text-align:left"><strong>$36.53 Million</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="4.-quantitative-impact-analysis"><strong>4. Quantitative Impact Analysis</strong></h3>
+<p>The tax crackdown shock event occurs in May, affecting the entire second quarter (May, June, July). We calculate the direct revenue loss for this quarter.</p>
+<p><strong>Step 1: Calculate the Quarterly Revenue Loss</strong>
+The event causes a 50% reduction in the projected quarterly revenue from the mainland segment.</p>
+<ul>
+<li><strong>Loss (Scenario A):</strong> $11.45 Million * 50% = <strong>$5.73 Million</strong></li>
+<li><strong>Loss (Scenario C):</strong> $36.53 Million * 50% = <strong>$18.27 Million</strong></li>
+</ul>
+<p><strong>Step 2: Calculate the Impact on Total Quarterly Revenue</strong>
+We compare this loss to the company's total projected quarterly revenue of $525 million.</p>
+<ul>
+<li><strong>Impact % (Scenario A):</strong> ($5.73M / $525M) * 100 = <strong>1.09%</strong></li>
+<li><strong>Impact % (Scenario C):</strong> ($18.27M / $525M) * 100 = <strong>3.48%</strong></li>
+</ul>
+<p>The following chart visualizes the negligible impact of this revenue loss on the company's total quarterly earnings.</p>
+
+        <div class="w-full min-w-[400px] overflow-auto">
+          <div class="mx-auto my-4 flex max-h-[300px] w-full items-center justify-center">
+            <canvas data-chart-config="%7B%0A%20%20%22type%22%3A%20%22bar%22%2C%0A%20%20%22data%22%3A%20%7B%0A%20%20%20%20%22labels%22%3A%20%5B%22Projected%20Q2%20Revenue%22%2C%20%22Post-Shock%20Q2%20(Realistic)%22%2C%20%22Post-Shock%20Q2%20(Grey%20Market)%22%5D%2C%0A%20%20%20%20%22datasets%22%3A%20%5B%7B%0A%20%20%20%20%20%20%22label%22%3A%20%22Total%20Company%20Quarterly%20Revenue%20(in%20Millions%20USD)%22%2C%0A%20%20%20%20%20%20%22data%22%3A%20%5B525%2C%20519.27%2C%20506.73%5D%2C%0A%20%20%20%20%20%20%22backgroundColor%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22rgba(75%2C%20192%2C%20192%2C%200.6)%22%2C%0A%20%20%20%20%20%20%20%20%22rgba(54%2C%20162%2C%20235%2C%200.6)%22%2C%0A%20%20%20%20%20%20%20%20%22rgba(255%2C%20206%2C%2086%2C%200.6)%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%5D%0A%20%20%7D%2C%0A%20%20%22options%22%3A%20%7B%0A%20%20%20%20%22responsive%22%3A%20true%2C%0A%20%20%20%20%22plugins%22%3A%20%7B%0A%20%20%20%20%20%20%22title%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22display%22%3A%20true%2C%0A%20%20%20%20%20%20%20%20%22text%22%3A%20%22Impact%20of%20Tax%20Crackdown%20on%20Total%20Q2%202025%20Revenue%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22scales%22%3A%20%7B%0A%20%20%20%20%20%20%22y%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22beginAtZero%22%3A%20false%2C%0A%20%20%20%20%20%20%20%20%22min%22%3A%20500%2C%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22display%22%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%22text%22%3A%20%22Millions%20USD%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A"></canvas>
+          </div>
+        </div>
+      <h3 id="5.-cross-verification%3A-why-this-impact-is-contained"><strong>5. Cross-Verification: Why This Impact is Contained</strong></h3>
+<p>Our conclusion that this shock is manageable is strongly supported by Futu's fundamental financial data, which validates the core assumption of a successful international pivot.</p>
+<ul>
+<li><strong>Validated Growth:</strong> Futu's total revenue grew by <strong>36%</strong> in 2024, and total assets surged by <strong>63.5%</strong>—all <em>after</em> the mainland business was curtailed. This demonstrates that international growth is powerful and more than compensates for the mainland decline.</li>
+<li><strong>Validated ARPU:</strong> Our model's use of a ~$700 Average Revenue Per User is validated by the actual 2024 figure of <strong>$726</strong>.</li>
+</ul>
+<p>The data clearly shows a healthy, expanding global business that is no longer dependent on its legacy mainland segment.</p>
+
+        <div class="w-full min-w-[400px] overflow-auto">
+          <div class="mx-auto my-4 flex max-h-[300px] w-full items-center justify-center">
+            <canvas data-chart-config="%7B%0A%20%20%22type%22%3A%20%22bar%22%2C%0A%20%20%22data%22%3A%20%7B%0A%20%20%20%20%22labels%22%3A%20%5B%222022%22%2C%20%222023%22%2C%20%222024%22%5D%2C%0A%20%20%20%20%22datasets%22%3A%20%5B%7B%0A%20%20%20%20%20%20%22label%22%3A%20%22Total%20Revenue%20(in%20Billions%20HKD)%22%2C%0A%20%20%20%20%20%20%22data%22%3A%20%5B7.6%2C%2010.0%2C%2013.6%5D%2C%0A%20%20%20%20%20%20%22yAxisID%22%3A%20%22y%22%0A%20%20%20%20%7D%2C%20%7B%0A%20%20%20%20%20%20%22label%22%3A%20%22Total%20Assets%20(in%20Billions%20HKD)%22%2C%0A%20%20%20%20%20%20%22data%22%3A%20%5B94.5%2C%2097.1%2C%20158.8%5D%2C%0A%20%20%20%20%20%20%22yAxisID%22%3A%20%22y1%22%2C%0A%20%20%20%20%20%20%22type%22%3A%20%22line%22%2C%0A%20%20%20%20%20%20%22tension%22%3A%200.2%0A%20%20%20%20%7D%5D%0A%20%20%7D%2C%0A%20%20%22options%22%3A%20%7B%0A%20%20%20%20%22responsive%22%3A%20true%2C%0A%20%20%20%20%22plugins%22%3A%20%7B%0A%20%20%20%20%20%20%22title%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22display%22%3A%20true%2C%0A%20%20%20%20%20%20%20%20%22text%22%3A%20%22Futu's%20Growth%20Post-Mainland%20Crackdown%20(2022-2024)%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22scales%22%3A%20%7B%0A%20%20%20%20%20%20%22y%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22linear%22%2C%0A%20%20%20%20%20%20%20%20%22display%22%3A%20true%2C%0A%20%20%20%20%20%20%20%20%22position%22%3A%20%22left%22%2C%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22display%22%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%22text%22%3A%20%22Revenue%20(Billions%20HKD)%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22y1%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22linear%22%2C%0A%20%20%20%20%20%20%20%20%22display%22%3A%20true%2C%0A%20%20%20%20%20%20%20%20%22position%22%3A%20%22right%22%2C%0A%20%20%20%20%20%20%20%20%22grid%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22drawOnChartArea%22%3A%20false%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22display%22%3A%20true%2C%0A%20%20%20%20%20%20%20%20%20%20%22text%22%3A%20%22Assets%20(Billions%20HKD)%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A"></canvas>
+          </div>
+        </div>
+      <h3 id="6.-conclusion-%26-investment-outlook"><strong>6. Conclusion &amp; Investment Outlook</strong></h3>
+<p>The era of viewing Futu through the lens of Chinese regulatory risk is over. While the mainland segment was once the company's engine, it is now a small, firewalled, and rapidly depreciating asset.</p>
+<p>Our analysis demonstrates that even a severe shock like an accelerated tax crackdown would have a <strong>negligible impact on Futu's overall financial performance</strong>, reducing total quarterly revenue by a mere 1-3.5%. The company's growth trajectory is now firmly tied to its success in markets like Hong Kong, Singapore, Japan, and North America.</p>
+<p>Investors should focus on the execution of this international strategy—client acquisition costs, ARPU trends in new markets, and competitive positioning—as these factors will determine Futu's future, not the final chapter of its mainland China story.</p>
+
+    </div>
+    
+  
+  
+  
+  
+    <footer class="flex gap-x-4 mt-8 pt-4 border-t">
+      
+        <a href="/flamels-recipe/docs/posts/unitedhealth-group-unh-is-currently-at-a-critical-inflection-point/" class="button-outline flex items-center gap-x-2 truncate">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m15 18-6-6 6-6" /></svg>
+          <span class="max-w-1/2 truncate">UnitedHealth Group (UNH) is currently at a critical inflection point</span>
+        </a>
+      
+      
+        <a href="/flamels-recipe/docs/demo/" class="button-outline flex items-center gap-x-2 ml-auto truncate">
+          <span class="max-w-1/2 truncate">Demo</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="m9 18 6-6-6-6" /></svg>
+        </a>
+      
+      </footer>
+  
+
+  </div>
+  
+  <div class="w-64 max-lg:hidden">
+    <div class="sticky top-16 text-sm">
+      <h2 class="font-semibold track-tight">On this page</h2>
+      <nav class="toc" >
+        <ol><li><a href="#1.-executive-summary-%26-key-judgments">1. Executive Summary &amp; Key Judgments</a></li><li><a href="#2.-background%3A-from-mainland-reliance-to-global-powerhouse">2. Background: From Mainland Reliance to Global Powerhouse</a></li><li><a href="#3.-methodology%3A-modeling-the-quarterly-revenue-shock">3. Methodology: Modeling the Quarterly Revenue Shock</a></li><li><a href="#4.-quantitative-impact-analysis">4. Quantitative Impact Analysis</a></li><li><a href="#5.-cross-verification%3A-why-this-impact-is-contained">5. Cross-Verification: Why This Impact is Contained</a></li><li><a href="#6.-conclusion-%26-investment-outlook">6. Conclusion &amp; Investment Outlook</a></li></ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<link x-bind:href="darkMode ? 'https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css' : 'https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github.min.css'" rel="stylesheet">
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/yaml.min.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function() { hljs.highlightAll(); });</script>
+  <script src="/flamels-recipe/js/site-header.js" type="module" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('canvas[data-chart-config]').forEach(canvas => {
+        try {
+          const config = eval(`(${decodeURIComponent(canvas.dataset.chartConfig)})`);
+          const ctx = canvas.getContext('2d');
+          new Chart(ctx, config);
+        } catch (err) {
+          console.warn('Failed to render chart:', err);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
