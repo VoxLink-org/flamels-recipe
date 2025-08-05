@@ -1,5 +1,5 @@
 ---
-title: 阿里巴巴集团（BABA）投资研究报告
+title: BABA is a long term investment 阿里巴巴集团（BABA）投资研究报告
 published: true
 date: 2025-08-05
 description: 公司强大的基本面、稳固的市场地位、在AI和云领域的清晰增长路径，以及积极的股东回报政策，共同构成了其长期价值的基石。虽然地缘政治和竞争风险客观存在，但公司的应对策略和业务结构使其具备了强大的抗风险能力。
