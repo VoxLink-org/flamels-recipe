@@ -6,7 +6,7 @@ description: We believe in the company's long-term strategic vision but advise
   investors to await a more favorable entry point, pending clarity on the
   successful integration of CyberArk, a stabilization of insider sentiment, and
   a more attractive valuation.
-order: 42
+order: 18
 ---
 ### **1. Executive Summary**
 
