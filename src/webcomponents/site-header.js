@@ -34,6 +34,9 @@ class SiteHeader extends LitElement {
       'text-sm': true, 'font-medium': true, 'text-muted-foreground': true, 'hover:text-primary': true,
       '!text-primary': location.hostname === 'chat.findata-be.uk', // NJK: if page.url == '/docs/about/'
     };
+    const buildAgentClasses = {
+      'text-sm': true, 'font-medium': true, 'text-muted-foreground': true, 'hover:text-primary': true,
+    };
     const blogsClasses = {
       'text-sm': true, 'font-medium': true, 'text-muted-foreground': true, 'hover:text-primary': true,
       '!text-primary': this.pageUrl.includes('/docs'), // NJK: if '/docs' in page.url
@@ -47,6 +50,9 @@ class SiteHeader extends LitElement {
         </a>
         <a class="ml-auto ${classMap(aboutClasses)}" href="https://chat.findata-be.uk">
           Chat
+        </a>
+        <a class="${classMap(buildAgentClasses)}" href="https://plusefin.com/" target="_blank" rel="noopener noreferrer">
+          build your own agent
         </a>
         <a class="${classMap(blogsClasses)}" href="${this.sitePath}/docs">
           Blogs
