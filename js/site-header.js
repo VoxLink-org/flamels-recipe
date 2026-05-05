@@ -638,6 +638,12 @@
         "!text-primary": location.hostname === "chat.findata-be.uk"
         // NJK: if page.url == '/docs/about/'
       };
+      const buildAgentClasses = {
+        "text-sm": true,
+        "font-medium": true,
+        "text-muted-foreground": true,
+        "hover:text-primary": true
+      };
       const blogsClasses = {
         "text-sm": true,
         "font-medium": true,
@@ -654,6 +660,9 @@
         </a>
         <a class="ml-auto ${e6(aboutClasses)}" href="https://chat.findata-be.uk">
           Chat
+        </a>
+        <a class="${e6(buildAgentClasses)}" href="https://plusefin.com/" target="_blank" rel="noopener noreferrer">
+          build your own agent
         </a>
         <a class="${e6(blogsClasses)}" href="${this.sitePath}/docs">
           Blogs
