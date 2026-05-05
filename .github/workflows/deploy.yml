@@ -4,12 +4,11 @@ on:
   push:
     branches:
       - main
-  release:
-    types: [published]
+  workflow_dispatch:
 
 jobs:
   deploy:
-    if: github.event_name == 'release' || contains(github.event.head_commit.message, 'via Pages CMS') || contains(github.event.head_commit.message, 'release')
+    if: github.event_name == 'release' || github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, 'via Pages CMS') || contains(github.event.head_commit.message, 'release')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
